@@ -1,0 +1,72 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { Content as FaqContent } from '../content/faq.md';
+---
+
+<MainLayout title="FAQ - Nelly's Adventures">
+  <div class="content-container">
+    <FaqContent />
+  </div>
+</MainLayout>
+
+<style>
+  .content-container {
+    background-color: #f5e6d3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  /* Style markdown content */
+  :global(.content-container h1) {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.content-container h2) {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  :global(.content-container h3) {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  :global(.content-container p) {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  :global(.content-container ul, .content-container ol) {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  :global(.content-container li) {
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.content-container a) {
+    color: #8fba5f;
+    text-decoration: underline;
+  }
+
+  :global(.content-container a:hover) {
+    color: #7da951;
+  }
+
+  @media (max-width: 768px) {
+    :global(.content-container h1) {
+      font-size: 2rem;
+    }
+    
+    :global(.content-container h2) {
+      font-size: 1.25rem;
+    }
+  }
+</style>

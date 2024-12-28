@@ -1,0 +1,133 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+import childrenInDirt from '../assets/children-in-dirt.png';
+import nellyPhoto from '../assets/nelly-photo.jpg';
+---
+
+<MainLayout title="About Nelly's Adventures">
+  <div class="about-container">
+    <div class="about-box about-box-1">
+      <div class="image-container">
+        <div class="image-wrapper">
+          <img 
+            src={childrenInDirt.src}
+            alt="Children playing in dirt" 
+            class="about-image"
+          />
+        </div>
+      </div>
+      <div class="text-container">
+        <h1>About Nelly's Adventures</h1>
+        <p>
+          Nelly's Adventures is a nature-based outdoor childcare dedicated to providing a unique learning experience for children aged 2 - 6 years.
+        </p>
+        <p>
+          The service offers a safe and enriching experience where children can play, learn, and grow while fostering a deep connection with the natural world.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-box about-box-2">
+      <div class="image-container">
+        <div class="image-wrapper">
+          <img 
+            src={nellyPhoto.src}
+            alt="Nelly (Marlen Schoenig)" 
+            class="about-image"
+          />
+        </div>
+      </div>
+      <div class="text-container">
+        <h1>About Me</h1>
+        <p>
+          Hi, I'm Nelly (Marlen Schoenig), an experienced child care provider with several years of experience in child-focused roles. As a dedicated mother of three and early childhood educator, I'm passionate about creating a safe, nurturing environment where children can explore, learn, and grow every day.
+        </p>
+        <p>
+          I hold a Certificate III in Early Childhood Education and Care, current First Aid, CPR, Food Handling, and Child Protection Awareness certifications, and a Working with Children Check.
+        </p>
+        <p>
+          At Nelly's Adventures, I aim to create meaningful, adventure-filled days that inspire a lifelong love for learning in every child. The service is inspired by Montessori principles and nature pedagogy. With an emphasis on respect, empathy, and curiosity, I look forward to supporting your little one in their journey of discovery!
+        </p>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<style>
+  .about-container {
+    background-color: #f5e6d3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  .about-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-box-1 .image-container {
+    order: 1;
+  }
+
+  .about-box-1 .text-container {
+    order: 2;
+  }
+
+  .about-box-2 .image-container {
+    order: 2;
+  }
+
+  .about-box-2 .text-container {
+    order: 1;
+  }
+
+  .image-wrapper {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 500px;
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  .about-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-container p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .about-box {
+      grid-template-columns: 1fr;
+    }
+
+    .about-box-1 .image-container,
+    .about-box-2 .image-container {
+      order: 1;
+    }
+
+    .about-box-1 .text-container,
+    .about-box-2 .text-container {
+      order: 2;
+    }
+
+    .about-container h1 {
+      font-size: 2rem;
+    }
+  }
+</style>

@@ -1,11 +1,149 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import childrenInNature from '../assets/children-in-nature.jpg';
+
+const emailAddress = "contact@nelly.care";
+const emailSubject = "Enquiry about Nelly's Adventures";
+const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}`;
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MainLayout title="About Nelly's Adventures">
+  <div class="about-container">
+    <h1>About Nelly's Adventures</h1>
+
+    <div class="content-wrapper">
+      <div class="image-container">
+        <img 
+          src={childrenInNature.src}
+          alt="Children sitting in nature under blooming trees" 
+          class="main-image"
+        />
+      </div>
+
+      <div class="info-section">
+        <div class="announcement">
+          <em>New in Manly, taking bookings now!</em><br />
+          <em>Program starting 20 Jan 2025</em>
+        </div>
+
+        <div class="details">
+          <p><span class="icon">📍</span> Based in Manly, NSW</p>
+          <p><span class="icon">⏰</span> Mon, Tue, Wed</p>
+          <p><span class="icon">🕐</span> 8:30 AM – 4 PM</p>
+          <p><span class="icon">💰</span> $140 per child per day</p>
+          <p><span class="icon">👥</span> Small group of children aged 2-6 years, led by a local 🇩🇪🇦🇺 mum who is a qualified, experienced caregiver passionate about outdoor play and learning.</p>
+        </div>
+
+        <div class="features">
+          <h2><span class="icon">🌿</span> Nelly's Adventures:</h2>
+          <ul>
+            <li>Provides fun nature experiences, structured learning and free play, guided by the children's interests</li>
+            <li>Supports wellbeing, physical & emotional development</li>
+            <li>Builds life skills, creativity, empathy and STEAM basics</li>
+            <li>Creates a family like environment with up to four children (regular attendance preferred)</li>
+          </ul>
+        </div>
+
+        <div class="cta">
+          <h2>Spots are limited—join the adventure today!</h2>
+          <a href={emailLink} class="contact-btn">Contact me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<style>
+  .about-container {
+    background-color: #f5e6d3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .announcement {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .details {
+    margin-bottom: 2rem;
+  }
+
+  .details p {
+    margin: 0.5rem 0;
+  }
+
+  .icon {
+    margin-right: 0.5rem;
+  }
+
+  .features ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .features li {
+    margin: 1rem 0;
+    line-height: 1.4;
+  }
+
+  .features li::before {
+    content: "•";
+    color: #8fba5f;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  .cta {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .contact-btn {
+    background-color: #8fba5f;
+    color: #333;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+		margin-top: 1rem;
+  }
+
+  .contact-btn:hover {
+    background-color: #7da951;
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
