@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
 
 // Photo by Ksenia Chernaya: https://www.pexels.com/photo/photo-of-children-on-a-slide-8535889/
 // Free to use
@@ -14,8 +15,8 @@ import nellyPhoto from "../assets/nelly-photo.jpg";
     <div class="about-box about-box-1">
       <div class="image-container">
         <div class="image-wrapper">
-          <img
-            src={childrenOnSlide.src}
+          <Image
+            src={childrenOnSlide}
             alt="Children playing in dirt"
             class="about-image"
           />
@@ -38,8 +39,8 @@ import nellyPhoto from "../assets/nelly-photo.jpg";
     <div class="about-box about-box-2">
       <div class="image-container">
         <div class="image-wrapper">
-          <img
-            src={nellyPhoto.src}
+          <Image
+            src={nellyPhoto}
             alt="Nelly (Marlen Schoenig)"
             class="about-image"
           />
