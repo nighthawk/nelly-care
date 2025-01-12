@@ -1,10 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
 
 // Photo by Vika Glitter: https://www.pexels.com/photo/boy-in-white-and-blue-shirt-and-blue-jeans-sitting-in-green-grass-1094069/
 // Free to use
 // Boy in White and Blue Shirt and Blue Jeans Sitting in Green Grass
-import childrenInNature from "../assets/pexels-vika-glitter-392079-1094069.jpg";
+// import childrenInNature from "../assets/pexels-vika-glitter-392079-1094069.jpg";
+
+import nellyWagon from "../assets/nelly-wagon.jpg";
 
 const emailAddress = "contact@nelly.care";
 const emailSubject = "Enquiry about Nelly's Adventures";
@@ -17,10 +20,11 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
 
     <div class="content-wrapper">
       <div class="image-container">
-        <img
-          src={childrenInNature.src}
-          alt="Children sitting in nature under blooming trees"
+        <Image
+          src={nellyWagon}
+          alt="Nelly with her wagon"
           class="main-image"
+          loading="eager"
         />
       </div>
 
@@ -43,7 +47,7 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
         </div>
 
         <div class="features">
-          <h2><span class="icon">🌿</span> Nelly's Adventures:</h2>
+          <h2><span class="icon">🌿</span> Nelly's Adventures</h2>
           <ul>
             <li>
               Provides fun nature experiences, structured learning and free
@@ -56,6 +60,20 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
               (regular attendance preferred)
             </li>
           </ul>
+        </div>
+
+        <div class="testimonials">
+          <h2><span class="icon">💬</span> Parent Testimonials</h2>
+          <p>
+            "Nelly has taken both my children on adventures and they had the
+            best time exploring and learning outdoors! They were so happy and
+            engaged, and I loved seeing h“w much they enjoyed the experience.
+            They came home excited, happy, and full of stories about what they
+            saw and did. I felt completely at ease knowing they were in such
+            capable hands. Highly recommend Nelly’s Adventures!" - <i
+              >Veronika Z., Manly</i
+            >
+          </p>
         </div>
 
         <div class="cta">

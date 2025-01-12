@@ -24,7 +24,10 @@ The routine may vary depending on the children’s interests and weather conditi
 ​
 ## What happens if it rains?
 In light rain, our plans go ahead; all children should have rain jackets, pants and boots.
-​I have plenty of options for days or times when the weather is unsuitable for outdoor activities (e.g., heavy rain, extreme heat), these include museums, libraries and other indoor venues...
+
+​I have plenty of options for days or times when the weather is unsuitable for outdoor activities (e.g., heavy rain, extreme heat), these include museums, libraries and other indoor venues.
+
+In the unlikely event that conditions are considered too dangerous to continue the service, activities will be cancelled and carers notified.
 ​
 ## ​Where do you take the children?
 We visit local parks, playgrounds, and other public spaces in and around Manly, NSW. The destinations depend on the day’s activities and weather, and the children's interests.
