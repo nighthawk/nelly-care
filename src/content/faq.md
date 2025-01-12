@@ -10,7 +10,7 @@ The service runs Mondays - Wednesdays, 8:30am - 4pm.
 Currently we meet at Little Manly Point Playground in Manly. Ideally children would be dropped off 8:30-9am, and picked up 3:30-4pm; however individual arrangements can be made.
 
 ## Why are you mostly outdoors?
-I believe children thrive when they’re immersed in nature. Spending time outdoors allows children to explore, play, and learn in an environment that supports their physical, emotional, and cognitive development. Outdoor settings provide endless opportunities for curiosity, creativity, and discovery. Children will also experience greater physical health, emotional well-being, social skills and a deeper connection with nature.
+Spending time in nature allows children to explore, play, and learn in an environment that supports their physical, emotional, and cognitive development. Outdoor settings provide endless opportunities for curiosity, creativity, and discovery. Children will experience greater physical health, emotional well-being, social skills and a deeper connection with nature. For more info on the benefits of what we do, check out <a href=https://www.abc.net.au/abckids/early-education/reflective-journal/bush-kinder-nature-wellbeing-and-resilience/13390968+>this ABC News article about Bush Kinder</a>.
 
 ## What does a typical day look like?
 Our day includes:
