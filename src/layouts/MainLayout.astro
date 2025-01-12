@@ -2,33 +2,38 @@
 // layouts/MainLayout.astro
 const { title } = Astro.props;
 
-import nellyLogo from '../assets/logo.png';
+import nellyLogo from "../assets/logo.png";
 
 const emailAddress = "contact@nelly.care";
 const emailSubject = "Enquiry about Nelly's Adventures";
 const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}`;
-
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <style>
       /* CSS Reset */
-      *, *::before, *::after {
+      *,
+      *::before,
+      *::after {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
 
-      html, body {
+      html,
+      body {
         margin: 0;
         padding: 0;
         height: 100%;
-        font-family: system-ui, -apple-system, sans-serif;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
       }
     </style>
   </head>
@@ -37,7 +42,13 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
       <header>
         <div class="header-content">
           <div class="logo">
-            <a href="/"><img src={nellyLogo.src} alt="Nelly's Adventures Logo" style="width:70px" /></a>
+            <a href="/"
+              ><img
+                src={nellyLogo.src}
+                alt="Nelly's Adventures Logo"
+                style="width:70px"
+              /></a
+            >
             <p class="tagline">"A mix of bush kindy and family daycare"</p>
           </div>
 
@@ -57,7 +68,7 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
       <footer>
         <div class="footer-content">
           <p>Nelly's Adventures</p>
-					<p><a href="mailto:contact@nelly.care">contact@nelly.care</a></p>
+          <p><a href="mailto:contact@nelly.care">contact@nelly.care</a></p>
           <p>ABN: 40 665 200 517</p>
         </div>
       </footer>
@@ -78,7 +89,8 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
     padding: 1rem 0;
   }
 
-  .header-content, .footer-content {
+  .header-content,
+  .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;

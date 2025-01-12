@@ -1,5 +1,4 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
 ---
 
 # Frequently Asked Questions

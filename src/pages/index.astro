@@ -1,10 +1,10 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
+import MainLayout from "../layouts/MainLayout.astro";
 
 // Photo by Vika Glitter: https://www.pexels.com/photo/boy-in-white-and-blue-shirt-and-blue-jeans-sitting-in-green-grass-1094069/
 // Free to use
 // Boy in White and Blue Shirt and Blue Jeans Sitting in Green Grass
-import childrenInNature from '../assets/pexels-vika-glitter-392079-1094069.jpg';
+import childrenInNature from "../assets/pexels-vika-glitter-392079-1094069.jpg";
 
 const emailAddress = "contact@nelly.care";
 const emailSubject = "Enquiry about Nelly's Adventures";
@@ -17,9 +17,9 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
 
     <div class="content-wrapper">
       <div class="image-container">
-        <img 
+        <img
           src={childrenInNature.src}
-          alt="Children sitting in nature under blooming trees" 
+          alt="Children sitting in nature under blooming trees"
           class="main-image"
         />
       </div>
@@ -35,16 +35,26 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
           <p><span class="icon">⏰</span> Mon, Tue, Wed</p>
           <p><span class="icon">🕐</span> 8:30 AM – 4 PM</p>
           <p><span class="icon">💰</span> $140 per child per day</p>
-          <p><span class="icon">👥</span> Small group of children aged 2-6 years, led by a local 🇩🇪🇦🇺 mum who is a qualified, experienced caregiver passionate about outdoor play and learning.</p>
+          <p>
+            <span class="icon">👥</span> Small group of children aged 2-6 years,
+            led by a local 🇩🇪🇦🇺 mum who is a qualified, experienced caregiver passionate
+            about outdoor play and learning.
+          </p>
         </div>
 
         <div class="features">
           <h2><span class="icon">🌿</span> Nelly's Adventures:</h2>
           <ul>
-            <li>Provides fun nature experiences, structured learning and free play, guided by the children's interests</li>
+            <li>
+              Provides fun nature experiences, structured learning and free
+              play, guided by the children's interests
+            </li>
             <li>Supports wellbeing, physical & emotional development</li>
             <li>Builds life skills, creativity, empathy and STEAM basics</li>
-            <li>Creates a family like environment with up to four children (regular attendance preferred)</li>
+            <li>
+              Creates a family like environment with up to four children
+              (regular attendance preferred)
+            </li>
           </ul>
         </div>
 
@@ -63,7 +73,10 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 20px;
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family:
+      system-ui,
+      -apple-system,
+      sans-serif;
   }
 
   h1 {
@@ -133,7 +146,7 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
     font-size: 1rem;
     text-decoration: none;
     display: inline-block;
-		margin-top: 1rem;
+    margin-top: 1rem;
   }
 
   .contact-btn:hover {
@@ -144,7 +157,7 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
     .content-wrapper {
       grid-template-columns: 1fr;
     }
-    
+
     h1 {
       font-size: 2rem;
     }
