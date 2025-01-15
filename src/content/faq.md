@@ -37,7 +37,7 @@ Safety is my top priority:
 - Children wear high-visibility vests and trackers (with parental consent).
 - I maintain a 1:4 ratio for close supervision.
 - I carry a fully stocked first aid kit and am trained in First Aid and CPR.
-- For moving between places, the children walk using a walking rope, or are seated in a 4-seater pram with seatbelts. We might also use public transport (buses, ferries) depending on the location we visit.
+- For moving between places, the children walk using a walking rope, or are seated in a 4-seater pram with seatbelts. We might also use public transport (buses, ferries) depending on the location we visit; policies and procedures are in place to ensure safety during travel.
 - In addition, I share daily updates and photos through a private WhatsApp group. Individual communication is also available for any specific concerns or questions.
 ​
 ## ​How do I book a spot?
