@@ -42,3 +42,6 @@ Safety is my top priority:
 ​
 ## ​How do I book a spot?
 Spots are limited, so early bookings are recommended! Contact me to inquire about availability and reserve a place for your child.
+
+## ​Is there an orientation period?
+Yes, it is recommended that each child that is signing up to attend regularly has at least one orientation day before starting at the service. A parent/carer will be attending the service with the child during the orientation visit.
