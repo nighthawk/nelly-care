@@ -4,7 +4,7 @@
 # Frequently Asked Questions
 
 ## Is this a 5 days a week service?
-The service runs Mondays - Wednesdays, 8:30am - 4pm.
+The service usually runs Mondays - Wednesdays, 8:30am - 4pm. Additional times/days possible on request.
 
 ## When and where is drop-off/pick-up?
 We usually meet at Little Manly Point Playground in Manly. Ideally children would be dropped off 8:30-9am, and picked up 3:30-4pm; however individual arrangements can be made.
@@ -34,7 +34,7 @@ We visit local parks, playgrounds, and other public spaces in and around Manly, 
 ​
 ## How do I know my child will be safe?
 Safety is my top priority:
-- I maintain a 1:4 ratio for close supervision.
+- I maintain close supervision and adhere to minimum child ratio requirements.
 - Children wear high-visibility vests and trackers (with parental consent).
 - I carry a fully stocked first aid kit and am trained in First Aid, CPR, Asthma and Anaphylaxis Management.
 - I also hold a current Working with Children Check and Police Check.
