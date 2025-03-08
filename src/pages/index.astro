@@ -12,6 +12,7 @@ import nellyWagon from "../assets/nelly-wagon.jpg";
 const emailAddress = "contact@nelly.care";
 const emailSubject = "Enquiry about Nelly's Adventures";
 const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}`;
+const bookingLink = "https://nellysadventures.setmore.com";
 ---
 
 <MainLayout title="About Nelly's Adventures">
@@ -81,6 +82,7 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
         <div class="cta">
           <h2>Spots are limited—join the adventure today!</h2>
           <a href={emailLink} class="contact-btn">Contact me</a>
+          <a href={bookingLink} class="book-btn">Book now</a>
         </div>
       </div>
     </div>
@@ -171,6 +173,24 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
 
   .contact-btn:hover {
     background-color: #7da951;
+  }
+
+  .book-btn {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .book-btn:hover {
+    background-color: #e6b800;
   }
 
   @media (max-width: 768px) {

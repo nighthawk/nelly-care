@@ -7,6 +7,7 @@ import nellyLogo from "../assets/logo.png";
 const emailAddress = "contact@nelly.care";
 const emailSubject = "Enquiry about Nelly's Adventures";
 const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}`;
+const bookingLink = "https://nellysadventures.setmore.com";
 ---
 
 <!doctype html>
@@ -56,7 +57,7 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
             <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/faq">FAQ</a>
-            <a href={emailLink}>Mail</a>
+            <a href={bookingLink} class="book-btn">Book</a>
           </nav>
         </div>
       </header>
@@ -138,6 +139,15 @@ const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubj
 
   .nav-links a:hover {
     background-color: #e4d5c2;
+  }
+
+  .nav-links a.book-btn {
+    background-color: #ffcc00;
+    color: #333;
+  }
+
+  .nav-links a.book-btn:hover {
+    background-color: #e6b800;
   }
 
   @media (max-width: 900px) {
