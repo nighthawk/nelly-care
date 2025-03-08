@@ -41,4 +41,4 @@ Safety is my top priority:
 - Policies and procedures are in place, including to ensure safety during travel between locations.
 ​
 ## ​How do I book a spot?
-Spots are limited, so early bookings are recommended! Contact me to inquire about availability and reserve a place for your child.
+Spots are limited, so early bookings are recommended! Contact me to inquire, or [book online here]([url](https://nellysadventures.setmore.com/)).
