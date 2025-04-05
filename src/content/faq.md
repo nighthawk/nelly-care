@@ -4,7 +4,7 @@
 # Frequently Asked Questions
 
 ## Is this a 5 days a week service?
-The service usually runs Mondays - Wednesdays, 8:30am - 4pm. Additional times/days possible on request.
+The service usually runs Mondays, Tuesdays Wednesdays and Fridays, 8:30am - 4pm. Additional times/days possible on request.
 
 ## When and where is drop-off/pick-up?
 We usually meet at Little Manly Point Playground in Manly. Ideally children would be dropped off 8:30-9am, and picked up 3:30-4pm; however individual arrangements can be made.
