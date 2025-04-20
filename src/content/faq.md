@@ -3,42 +3,67 @@
 
 # Frequently Asked Questions
 
-## Is this a 5 days a week service?
-The service usually runs Mondays, Tuesdays, Wednesdays and Fridays, 8:30am - 4pm. Additional times/days possible on request.
+## When do you operate?
 
-## When and where is drop-off/pick-up?
-We usually meet at Little Manly Point Playground in Manly. Ideally children would be dropped off 8:30-9am, and picked up 3:30-4pm; however individual arrangements can be made.
+Nelly’s Adventures usually runs on Mondays, Tuesdays, Wednesdays and Fridays, from 8:30am to 4:00pm.  
+Additional days and times may be available by request.
 
-## Why are you mostly outdoors?
-Spending time in nature allows children to explore, play, and learn in an environment that supports their physical, emotional, and cognitive development. Outdoor settings provide endless opportunities for curiosity, creativity, and discovery. Children will experience greater physical health, emotional well-being, social skills and a deeper connection with nature. For more info on the benefits of what we do, check out <a href="https://www.abc.net.au/abckids/early-education/reflective-journal/bush-kinder-nature-wellbeing-and-resilience/13390968+">this ABC News article about Bush Kinder</a>.
+## Where and when is drop-off and pick-up?
+
+Drop-off & pick-up location is in Manly, details upon enrolment.  
+**Drop-off:** 8:30–9:00am  
+**Pick-up:** 3:30–4:00pm  
+Individual arrangements can be discussed to suit your needs.
+
+## Why is it an outdoor-based service?
+
+Nature offers the perfect learning environment for young children.
+
+Outdoor play supports:  
+- Physical health and gross motor development  
+- Emotional regulation and resilience  
+- Social skills and teamwork  
+- Curiosity, independence, and creativity  
+- A lifelong connection to the natural world  
+
+🌱 Read more about the benefits in this ABC News article on Bush Kinder:  
+https://www.abc.net.au/abckids/early-education/reflective-journal/bush-kinder-nature-wellbeing-and-resilience/13390968+
 
 ## What does a typical day look like?
-Our day includes:
-- Regular meals, group times.
-- Travel between locations (playgrounds, parks, beaches).
-- Lots of opportunity for free play.
-- Nature walks, outdoor activities, and hands-on exploration.
-- Planned and spontaneous learning.
-- Fun and adventure, quiet times and rest.
-The routine may vary depending on the children’s interests and weather conditions.
-​
-## What happens if it rains?
-In light rain, our plans go ahead; all children should bring rain jackets, pants and boots if rain is forecast.
 
-​I have plenty of options for days or times when the weather is unsuitable for outdoor activities (e.g., heavy rain, extreme heat), these include museums, libraries and other indoor venues.
+Each day includes:  
+- Group time, shared meals  
+- Travel to parks, beaches, or playgrounds  
+- Plenty of free play, discovery, and nature walks  
+- Rest or quiet time  
+- Spontaneous and planned learning experiences  
+- A gentle rhythm with room for flexibility
 
-In the unlikely event that conditions are considered too dangerous to continue the service, activities will be cancelled and carers notified to pick up their children early.
-​
-## ​Where do you take the children?
-We visit local parks, playgrounds, and other public spaces in and around Manly, NSW. The destinations depend on the day’s activities and weather, and the children's interests.
-​
-## How do I know my child will be safe?
-Safety is my top priority:
-- I maintain close supervision and adhere to minimum child ratio requirements.
-- Children wear high-visibility vests and trackers (with parental consent).
-- I carry a fully stocked first aid kit and am trained in First Aid, CPR, Asthma and Anaphylaxis Management.
-- I also hold a current Working with Children Check and Police Check.
-- Policies and procedures are in place, including to ensure safety during travel between locations.
-​
-## ​How do I book a spot?
-Spots are limited, so early bookings are recommended! [Contact me](contact@nelly.care) to inquire, or [book online here](https://nellysadventures.setmore.com/).
+## What if it rains?
+
+We go ahead in light rain — children should bring wet-weather gear (rain jackets, pants, and boots).  
+
+If the weather is too severe (e.g. storms or extreme heat), we may:  
+- Move to indoor venues like libraries or museums  
+- End the day early if necessary — parents/carers will be notified
+
+## Where do you go each day?
+
+We explore a mix of local parks, beaches, playgrounds, and nature spots around Manly and surrounding suburbs.  
+Destinations vary depending on the day, weather, and children’s interests.
+
+## How is my child kept safe?
+
+Safety is always the priority at Nelly’s Adventures:  
+- Maximum of 4 children per day for close supervision  
+- High-vis vests and AirTags (with parental/carer consent) are used for busy areas  
+- I carry a fully stocked first aid kit at all times  
+- I hold current First Aid, CPR, Asthma and Anaphylaxis Training, plus a Working with Children Check and Police Check as well as a Child Protection Awareness Certificate  
+- Clear safety procedures for travel, emergencies, and communication
+
+## How can I book?
+
+Bookings can be made via my online system:  
+👉 https://nellysadventures.setmore.com/  
+
+Or feel free to get in touch if you’d like to chat first.
