@@ -1,0 +1,178 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Pricing – Nelly's Adventures">
+  <div class="pricing-container">
+    <h1>Simple Pricing for Big Adventures</h1>
+    <p class="intro-text">
+      Give your child a joyful day of play, learning, and exploration — with flexible options to suit your needs.
+    </p>
+
+    <hr class="divider" />
+
+    <section class="pricing-section">
+      <h2>🎉 Free Orientation Visit (9:15am – 10:45am)</h2>
+      <p>
+        Curious about Nelly’s Adventures? Come and see what it’s all about!
+        This orientation visit is a great way for new families to get a feel for the service before making a full booking.
+        It’s a relaxed, low-key session where you and your child can meet Nelly, experience the daily routine, and get comfortable with the group environment.
+        <strong>Booking essential</strong> — <a href="https://nellysadventures.setmore.com/classes/737f9769-e898-4202-b3e8-af85a060ab2d" target="_blank">book here</a>.
+      </p>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="pricing-section">
+      <h2>🌞 Daily Rates</h2>
+      <ul>
+        <li><strong>Full Day (8:30am – 4:00pm):</strong> $140 per child</li>
+        <li><strong>Half Day (8:30am – 12:30pm):</strong> $90 per child</li>
+      </ul>
+      <p>All outings, materials, and entry fees included. No hidden costs.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="pricing-section">
+      <h2>🪴 Flexible Add-ons</h2>
+      <ul>
+        <li><strong>Extra hour:</strong> +$25</li>
+        <li><strong>Sibling Discount:</strong> 15% off second child</li>
+        <li><strong>Occasional Care:</strong> One-off bookings welcome (subject to availability)</li>
+      </ul>
+      <p>If you need help with flexible arrangements, just reach out. I’m happy to chat!</p>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="pricing-section">
+      <h2>🎟️ Special Offers</h2>
+      <ul>
+        <li><strong>Introductory Offer:</strong> Join a half day adventure for only $50 or a full day adventure for only $100 (new families only)</li>
+        <li><strong>Refer a Friend:</strong> When they book a full day, you both get $20 off your next booking</li>
+      </ul>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="pricing-section">
+      <h2>📆 Weekly Discount Rates</h2>
+      <ul>
+        <li><strong>Book 2 days/week:</strong> 5% off total</li>
+        <li><strong>Book 3 days/week:</strong> 10% off total</li>
+        <li><strong>Book 4 days/week:</strong> 15% off total</li>
+      </ul>
+      <ul class="fine-print">
+        <li>✨ Applies to any mix of full or half-day bookings</li>
+        <li>✨ Discount applies when days are booked in advance for the week</li>
+        <li>✨ Subject to availability</li>
+      </ul>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="pricing-section">
+      <h2>📅 Booking Info</h2>
+      <ul>
+        <li>All bookings must be made in advance online or by contacting me directly.</li>
+        <li>Cancellations require 24 hours’ notice to avoid fees.</li>
+        <li>Payment is due at time of booking (or by arrangement).</li>
+      </ul>
+      <p>
+        <a href="https://nellysadventures.setmore.com/" target="_blank" class="book-link">Book Now</a>
+      </p>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="pricing-section">
+      <h2>💬 Not sure what works best?</h2>
+      <p>
+        Send me a message at <a href="mailto:contact@nelly.care">contact@nelly.care</a> — I’m happy to help you find the right fit for your child and schedule.
+      </p>
+    </section>
+  </div>
+</MainLayout>
+
+<style>
+  .pricing-container {
+    background-color: #f5e6d3;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  .pricing-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 2rem 0;
+  }
+
+  .pricing-section {
+    margin-bottom: 2rem;
+  }
+
+  .pricing-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-section ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .fine-print {
+    font-size: 0.95rem;
+    color: #555;
+    list-style-type: "✨ ";
+  }
+
+  .book-link {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #e88c5f;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+
+  .book-link:hover {
+    background-color: #d17448;
+  }
+
+  a {
+    color: #333;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .pricing-container h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
