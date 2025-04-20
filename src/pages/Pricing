@@ -1,5 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+
+import childrenOnSlide from "../assets/pexels-kseniachernaya-8535889.jpg";
+import nellyPhoto from "../assets/nelly-photo.jpg";
 ---
 
 <MainLayout title="Pricing – Nelly's Adventures">
