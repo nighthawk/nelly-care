@@ -55,7 +55,7 @@ Destinations vary depending on the day, weather, and children’s interests.
 ## How is my child kept safe?
 
 Safety is always the priority at Nelly’s Adventures:  
-- Maximum of 4 children per day for close supervision  
+- Maximum of 5 children per day for close supervision  
 - High-vis vests and AirTags (with parental/carer consent) are used for busy areas  
 - I carry a fully stocked first aid kit at all times  
 - I hold current First Aid, CPR, Asthma and Anaphylaxis Training, plus a Working with Children Check and Police Check as well as a Child Protection Awareness Certificate  
