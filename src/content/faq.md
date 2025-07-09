@@ -14,7 +14,7 @@ Drop-off & pick-up location is in Manly, details upon enrolment.
 **Drop-off:** 9:00–9:30am<br />
 **Pick-up half day:** 12:00-12:30pm<br />
 **Pick-up full day:** 3:30–4:00pm  
-Individual arrangements can be discussed to suit your needs.
+Individual arrangements possible.
 
 ## Why is it an outdoor-based service?
 
