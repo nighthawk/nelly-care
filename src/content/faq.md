@@ -5,13 +5,13 @@
 
 ## When do you operate?
 
-Nelly’s Adventures usually runs on Mondays, Tuesdays, Wednesdays and Fridays, from 8:30am to 4:00pm.  
+Nelly’s Adventures usually runs on Mondays, Tuesdays, Wednesdays and Fridays, from 9am to 4pm.  
 Additional days and times may be available by request.
 
 ## Where and when is drop-off and pick-up?
 
 Drop-off & pick-up location is in Manly, details upon enrolment.  
-**Drop-off:** 8:30–9:00am  
+**Drop-off:** 9:00–9:30am
 **Pick-up:** 3:30–4:00pm  
 Individual arrangements can be discussed to suit your needs.
 
@@ -61,9 +61,9 @@ Safety is always the priority at Nelly’s Adventures:
 - I hold current First Aid, CPR, Asthma and Anaphylaxis Training, plus a Working with Children Check and Police Check as well as a Child Protection Awareness Certificate  
 - Clear safety procedures for travel, emergencies, and communication
 
-## How can I book?
+## Do you still have a free spot on day X? How can I book?
 
-Bookings can be made via my online system:  
+Availability can be checked and bookings made online via  
 👉 https://nellysadventures.setmore.com/  
 
 Or feel free to get in touch if you’d like to chat first.
