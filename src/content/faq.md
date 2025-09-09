@@ -8,14 +8,6 @@
 Nelly’s Adventures usually runs on Mondays, Tuesdays, Wednesdays and Fridays, from 9am to 4pm.  
 Additional days and times may be available by request.
 
-## Where and when is drop-off and pick-up?
-
-Drop-off & pick-up location is in Manly, details upon enrolment.  
-**Drop-off:** 9:00–9:30am<br />
-**Pick-up half day:** 12:00-12:30pm<br />
-**Pick-up full day:** 3:30–4:00pm  
-Individual arrangements possible.
-
 ## Why is it an outdoor-based service?
 
 Nature offers the perfect learning environment for young children.
