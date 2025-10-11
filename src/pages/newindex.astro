@@ -1,12 +1,15 @@
 ---
 // src/pages/index.astro
+import { Image } from "astro:assets";
+import childrenNature from "../assets/children-in-nature.jpg";
+import nellyBinoculars from "../assets/nelly_binoculars.jpeg";
+
 const emailAddress = "contact@nelly.care";
 const emailSubject = "Enquiry about Nelly's Adventures";
 const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}`;
 const bookingLink = "https://nellysadventures.setmore.com";
 const whatsappLink = "https://wa.me/61490865056";
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +83,8 @@ const whatsappLink = "https://wa.me/61490865056";
           </div>
         </div>
         <div class="hero-image">
-          <img src="/src/assets/children-in-nature.jpg" alt="Children playing in nature">
+          <!-- Hero image -->
+          <Image src={childrenNature} alt="Children playing in nature" />
         </div>
       </div>
     </div>
@@ -91,7 +95,8 @@ const whatsappLink = "https://wa.me/61490865056";
     <div class="container">
       <div class="two-col-grid">
         <div class="about-image order-2">
-          <img src="/src/assets/nelly_binoculars.jpeg" alt="Child with binoculars">
+          <!-- About image -->
+          <Image src={nellyBinoculars} alt="Child with binoculars" />
         </div>
         <div class="order-1">
           <h2 class="section-title">What is Nelly's Adventures?</h2>
