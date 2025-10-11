@@ -1,10 +1,13 @@
 ---
+// src/pages/index.astro
+---
 import { Image } from "astro:assets";
 import nellyBinoculars from "../assets/nelly_binoculars.jpeg";
 import littleManlyPoint from "../assets/children-in-nature.jpg";
 
 const emailAddress = "contact@nelly.care";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,135 +15,833 @@ const emailAddress = "contact@nelly.care";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nelly's Adventures - Calm Nature Exploration for Curious Minds</title>
   <meta name="description" content="Small group nature exploration in Manly designed with neurodivergent children in mind. Ages 5-10, max 5 children per session.">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-content">
+        <span class="logo">Nelly's Adventures</span>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-links-desktop">
+          <a href="#about">About</a>
+          <a href="#what-we-offer">What We Offer</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
 
-    html {
-      scroll-behavior: smooth;
-    }
+        <!-- Mobile menu button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M18 6L6 18M6 6l12 12" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
 
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      color: #292524;
-      background-color: #fafaf9;
-    }
+      <!-- Mobile Navigation -->
+      <div class="nav-links-mobile hidden" id="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#what-we-offer">What We Offer</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    /* Navigation */
-    .nav {
-      background-color: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      position: fixed;
-      width: 100%;
-      z-index: 50;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    }
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title">
+            Calm nature exploration for curious minds
+          </h1>
+          <p class="hero-subtitle">
+            Small group nature exploration (max 5 children, ages 5-10) designed with neurodivergent children in mind.
+          </p>
+          <div class="hero-cta">
+            <a href="https://nellysadventures.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              Book Now
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=600&fit=crop" alt="Children exploring nature">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
+  <!-- About Section -->
+  <section id="about" class="section section-white">
+    <div class="container">
+      <div class="two-col-grid">
+        <div class="about-image order-2">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=450&fit=crop" alt="Little Manly Point nature">
+        </div>
+        <div class="order-1">
+          <h2 class="section-title">What is Nelly's Adventures?</h2>
+          <p class="text-lg mb-4">
+            As a qualified early childhood educator and parent who is neurodivergent myself, I offer calm, child-led adventures with gentle structure at Little Manly Point—where different minds are celebrated and curious kids can be authentically themselves in nature.
+          </p>
+          <p class="text-lg mb-6">
+            Each session is filled with nature play, learning, and connection in a small group setting that honours each child's unique way of experiencing the world.
+          </p>
+          
+          <div class="info-items">
+            <div class="info-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <h3>Location</h3>
+                <p>Little Manly Point, Manly NSW</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <div>
+                <h3>Session Times</h3>
+                <p>9:30am - 12:00pm</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+              <div>
+                <h3>Group Size</h3>
+                <p>Maximum 5 children, minimum 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    .nav-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 4rem;
-    }
+  <!-- What We Offer Section -->
+  <section id="what-we-offer" class="section section-gray">
+    <div class="container">
+      <h2 class="section-title text-center">What Makes Us Different</h2>
+      <p class="section-intro">
+        This program is designed for independent explorers who can follow basic safety boundaries and are ready to discover nature at their own pace.
+      </p>
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #047857;
-    }
+      <div class="three-col-grid">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Neurodivergent-Friendly</h3>
+          <p class="card-text">
+            Flexible participation, sensory-friendly approach, no forced eye contact, stimming welcomed, and understanding of different communication styles.
+          </p>
+        </div>
 
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Small Groups</h3>
+          <p class="card-text">
+            Maximum 5 children means more individual attention, reduced social demands, and space for each child to feel comfortable.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Gentle Structure</h3>
+          <p class="card-text">
+            Clear visual and verbal schedules, predictable rhythms, child-led exploration within safe boundaries, and breaks when needed.
+          </p>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <h3 class="highlight-title">Perfect For:</h3>
+        <ul class="highlight-list">
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Children aged 5-10 (younger children considered case-by-case if they demonstrate readiness for independent exploration)</span>
+          </li>
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Kids who can follow basic safety instructions and stay within boundaries</span>
+          </li>
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Independent explorers who enjoy child-led play with gentle adult facilitation</span>
+          </li>
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Children who prefer being outdoors and in smaller groups</span>
+          </li>
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Families needing occasional or regular care with sibling discounts available</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Session Structure -->
+  <section class="section section-white">
+    <div class="container-narrow">
+      <h2 class="section-title text-center">A Typical Session</h2>
+      <p class="section-intro">
+        Each session follows a gentle rhythm that children can rely on, while allowing flexibility for their interests and energy levels.
+      </p>
+
+      <div class="schedule">
+        <div class="schedule-item">
+          <div class="schedule-time">9:30-9:50</div>
+          <div class="schedule-content">
+            <h4>Arrival & Free Play</h4>
+            <p>First snack and free play at the playground. Time to settle in and connect.</p>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-time">9:50-10:00</div>
+          <div class="schedule-content">
+            <h4>Welcome Circle</h4>
+            <p>Same song and ritual each week. We talk about what we notice today—weather, seasons, nature changes.</p>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-time">10:00-10:45</div>
+          <div class="schedule-content">
+            <h4>Exploration Time</h4>
+            <p>Child-led play with gentle facilitation. Discover, create, imagine.</p>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-time">10:45-11:00</div>
+          <div class="schedule-content">
+            <h4>Second Snack</h4>
+            <p>A break to refuel and rest.</p>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-time">11:00-11:50</div>
+          <div class="schedule-content">
+            <h4>Continued Exploration</h4>
+            <p>More play and discovery. We might explore the grassy areas, bush edges, or occasionally visit the beach and rock pools depending on the group.</p>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-time">11:50-12:00</div>
+          <div class="schedule-content">
+            <h4>Closing Circle</h4>
+            <p>Same song and ritual. Share one thing we loved. Pickup time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section section-gray">
+    <div class="container-narrow">
+      <h2 class="section-title text-center">Pricing</h2>
+      <p class="section-intro">
+        Simple, transparent pricing with flexibility for families
+      </p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card pricing-featured">
+          <h3 class="pricing-title">4-Week Trial</h3>
+          <div class="pricing-amount">$240</div>
+          <p class="pricing-description">Perfect for getting started and seeing if the program is a good fit for your child.</p>
+          <ul class="pricing-features">
+            <li>
+              <span class="checkmark">✓</span>
+              <span>$60 per session</span>
+            </li>
+            <li>
+              <span class="checkmark">✓</span>
+              <span>Can be ended immediately if not a good fit</span>
+            </li>
+            <li>
+              <span class="checkmark">✓</span>
+              <span>Unused sessions refunded</span>
+            </li>
+          </ul>
+          <p class="pricing-note">Sibling rate: $50 per session</p>
+        </div>
+
+        <div class="pricing-card">
+          <h3 class="pricing-title">Term Bookings</h3>
+          <div class="pricing-amounts">
+            <div class="pricing-option">
+              <div class="pricing-amount-small">$480</div>
+              <p>8-week term</p>
+            </div>
+            <div class="pricing-option">
+              <div class="pricing-amount-small">$600</div>
+              <p>10-week term</p>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <span class="checkmark">✓</span>
+              <span>Pro-rata available if joining mid-term</span>
+            </li>
+            <li>
+              <span class="checkmark">✓</span>
+              <span>4 weeks notice required</span>
+            </li>
+          </ul>
+          <p class="pricing-note">Sibling discount available</p>
+        </div>
+      </div>
+
+      <div class="pricing-casual">
+        <p>
+          <strong>Casual spots</strong> available if space permits (bookings close 1 week prior). <strong>$60 per session</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section section-white">
+    <div class="container-narrow">
+      <h2 class="section-title text-center">Parent Testimonials</h2>
+      
+      <div class="testimonials">
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "Nelly has taken both my children on adventures and they had the best time exploring and learning outdoors! They were so happy and engaged, and I loved seeing how much they enjoyed the experience. They came home excited, happy, and full of stories about what they saw and did. I felt completely at ease knowing they were in such capable hands. Highly recommend Nelly's Adventures!"
+          </p>
+          <p class="testimonial-author">— Veronika Z, Manly</p>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "I love that it is all outdoors and in nature, George loved it!"
+          </p>
+          <p class="testimonial-author">— James G, Manly</p>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "My daughter loved exploring Manly and the outdoors with Nelly. She always comes back home sharing how much she learned and enjoyed her day with Nelly."
+          </p>
+          <p class="testimonial-author">— Juliana P, Manly</p>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "The kids loved being outside, the craft activities and being near the beach. We had a great experience!"
+          </p>
+          <p class="testimonial-author">— Lauren J, Manly</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-gradient">
+    <div class="container-narrow text-center">
+      <h2 class="section-title">Let's Make Some Outdoor Magic Together ✨</h2>
+      <p class="text-lg mb-4">
+        Whether you're looking for regular care or just a morning for your child to explore and connect with nature — Nelly's Adventures is here to help.
+      </p>
+      <p class="text-lg mb-8">
+        Reach out anytime with questions, or book a spot below. I'd love to meet you and your child!
+      </p>
+      
+      <div class="contact-cta">
+        <a href="mailto:contact@nelly.care?subject=Enquiry%20about%20Nelly's%20Adventures" class="btn btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          Email Me
+        </a>
+        <a href="https://nellysadventures.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          Book Now
+        </a>
+        <a href="https://wa.me/61490865056" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          Message on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="footer-title">Nelly's Adventures - Calm nature exploration for curious minds</p>
+      <p class="footer-text">Little Manly Point, Manly NSW | contact@nelly.care</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #292524;
+    background-color: #fafaf9;
+  }
+
+  /* Navigation */
+  .nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #047857;
+  }
+
+  .nav-links-desktop {
+    display: none;
+    gap: 2rem;
+  }
+
+  .nav-links-desktop a {
+    color: #44403c;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links-desktop a:hover {
+    color: #047857;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #44403c;
+  }
+
+  .nav-links-mobile {
+    padding-bottom: 1rem;
+  }
+
+  .nav-links-mobile a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0;
+    color: #44403c;
+    text-decoration: none;
+  }
+
+  .nav-links-mobile a:hover {
+    color: #047857;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  @media (min-width: 768px) {
     .nav-links-desktop {
-      display: none;
-      gap: 2rem;
+      display: flex;
     }
-
-    .nav-links-desktop a {
-      color: #44403c;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .nav-links-desktop a:hover {
-      color: #047857;
-    }
-
     .mobile-menu-btn {
-      display: block;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: #44403c;
+      display: none;
     }
+  }
 
-    .nav-links-mobile {
-      padding-bottom: 1rem;
+  /* Containers */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .container-narrow {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* Sections */
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-white {
+    background-color: #fff;
+  }
+
+  .section-gray {
+    background-color: #fafaf9;
+  }
+
+  .section-gradient {
+    background: linear-gradient(to bottom, #d6f5e8, #fafaf9);
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #292524;
+    margin-bottom: 1rem;
+  }
+
+  .section-intro {
+    font-size: 1.125rem;
+    color: #57534e;
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-lg {
+    font-size: 1.125rem;
+    color: #57534e;
+  }
+
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(to bottom, #d6f5e8, #fafaf9);
+  }
+
+  .hero-grid {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #292524;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: #57534e;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-image {
+    position: relative;
+  }
+
+  .hero-image img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 1rem;
+    background-color: #a7f3d0;
+  }
+
+  @media (min-width: 768px) {
+    .hero-grid {
+      grid-template-columns: 1fr 1fr;
     }
-
-    .nav-links-mobile a {
-      display: block;
-      width: 100%;
-      text-align: left;
-      padding: 0.5rem 0;
-      color: #44403c;
-      text-decoration: none;
+    .hero-cta {
+      flex-direction: row;
     }
-
-    .nav-links-mobile a:hover {
-      color: #047857;
+    .hero-title {
+      font-size: 3rem;
     }
-
-    .hidden {
-      display: none !important;
-    }
-
-    @media (min-width: 768px) {
-      .nav-links-desktop {
-        display: flex;
-      }
-      .mobile-menu-btn {
-        display: none;
-      }
-    }
-
-    /* Containers */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    .container-narrow {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    /* Sections */
-    .section {
-      padding: 4rem 0;
-    }
-
-    .section-white {
-      background-color: #fff;
-    }
-
-    .section-gray {
-      background-color: #fafaf9;
-    }
-
-    .section-gradient {
-      background: linear-gradient(to bottom, #d6f5e8, #fafaf9);
-    }
-
     .section-title {
-      font-size: 2r
+      font-size: 2.5rem;
+    }
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    background-color: #059669;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #047857;
+  }
+
+  .btn-secondary {
+    background-color: white;
+    color: #047857;
+    border: 2px solid #059669;
+  }
+
+  .btn-secondary:hover {
+    background-color: #d6f5e8;
+  }
+
+  /* Grids */
+  .two-col-grid {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .three-col-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-image img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 1rem;
+    background-color: #d6d3d1;
+  }
+
+  @media (min-width: 768px) {
+    .two-col-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .three-col-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .order-1 {
+      order: 1;
+    }
+    .order-2 {
+      order: 2;
+    }
+  }
+
+  /* Info Items */
+  .info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .info-item svg {
+    color: #059669;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+
+  .info-item h3 {
+    font-weight: 600;
+    color: #292524;
+    margin-bottom: 0.25rem;
+  }
+
+  .info-item p {
+    color: #57534e;
+  }
+
+  /* Cards */
+  .card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #d6f5e8;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .card-icon svg {
+    color: #059669;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #292524;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-text {
+    color: #57534e;
+  }
+
+  /* Highlight Box */
+  .highlight-box {
+    background-color: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .highlight-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #292524;
+    margin-bottom: 1rem;
+  }
+
+  .highlight-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .highlight-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: #44403c;
+  }
+
+  .checkmark {
+    color: #059669;
+    flex-shrink: 0;
+  }
+
+  /* Schedule */
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .schedule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .schedule-time {
+    flex-shrink: 0;
+    width: 6rem;
+    color: #059669;
+    font-weight: 600;
+  }
+
+  .schedule-content h4 {
+    font-weight: 600;
