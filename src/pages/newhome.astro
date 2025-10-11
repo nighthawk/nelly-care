@@ -1,395 +1,146 @@
-import React, { useState } from 'react';
-import { Menu, X, MapPin, Clock, Users, Heart, Mail, Calendar } from 'lucide-react';
+---
+import { Image } from "astro:assets";
+import nellyBinoculars from "../assets/nelly_binoculars.jpeg";
+//import littleManlyPoint from "../assets/little_manly_point.jpeg"; // or whatever you have
 
-const NellyAdventures = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const emailAddress = "contact@nelly.care";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nelly's Adventures - Calm Nature Exploration for Curious Minds</title>
+  <meta name="description" content="Small group nature exploration in Manly designed with neurodivergent children in mind. Ages 5-10, max 5 children per session.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    setMobileMenuOpen(false);
-  };
+    html {
+      scroll-behavior: smooth;
+    }
 
-  return (
-    <div className="min-h-screen bg-stone-50">
-      {/* Navigation */}
-      <nav className="bg-white/95 backdrop-blur-sm fixed w-full z-50 shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold text-emerald-700">Nelly's Adventures</span>
-            </div>
-            
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('about')} className="text-stone-700 hover:text-emerald-700 transition">About</button>
-              <button onClick={() => scrollToSection('what-we-offer')} className="text-stone-700 hover:text-emerald-700 transition">What We Offer</button>
-              <button onClick={() => scrollToSection('pricing')} className="text-stone-700 hover:text-emerald-700 transition">Pricing</button>
-              <button onClick={() => scrollToSection('testimonials')} className="text-stone-700 hover:text-emerald-700 transition">Testimonials</button>
-              <button onClick={() => scrollToSection('contact')} className="text-stone-700 hover:text-emerald-700 transition">Contact</button>
-            </div>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #292524;
+      background-color: #fafaf9;
+    }
 
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-stone-700">
-                {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
-          </div>
+    /* Navigation */
+    .nav {
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      position: fixed;
+      width: 100%;
+      z-index: 50;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
 
-          {/* Mobile Navigation */}
-          {mobileMenuOpen && (
-            <div className="md:hidden pb-4">
-              <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-stone-700 hover:text-emerald-700">About</button>
-              <button onClick={() => scrollToSection('what-we-offer')} className="block w-full text-left py-2 text-stone-700 hover:text-emerald-700">What We Offer</button>
-              <button onClick={() => scrollToSection('pricing')} className="block w-full text-left py-2 text-stone-700 hover:text-emerald-700">Pricing</button>
-              <button onClick={() => scrollToSection('testimonials')} className="block w-full text-left py-2 text-stone-700 hover:text-emerald-700">Testimonials</button>
-              <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-stone-700 hover:text-emerald-700">Contact</button>
-            </div>
-          )}
-        </div>
-      </nav>
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
 
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-b from-emerald-50 to-stone-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-stone-800 mb-4 leading-tight">
-                Calm nature exploration for curious minds
-              </h1>
-              <p className="text-xl text-stone-600 mb-8 leading-relaxed">
-                Small group nature exploration (max 5 children, ages 5-10) designed with neurodivergent children in mind.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://nellysadventures.setmore.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition font-medium">
-                  <Calendar className="mr-2" size={20} />
-                  Book Now
-                </a>
-                <button onClick={() => scrollToSection('contact')} className="inline-flex items-center justify-center px-8 py-3 bg-white text-emerald-700 border-2 border-emerald-600 rounded-lg hover:bg-emerald-50 transition font-medium">
-                  Get in Touch
-                </button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="aspect-square bg-emerald-200 rounded-2xl overflow-hidden">
-                <img src="/api/placeholder/600/600" alt="Children exploring nature" className="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4rem;
+    }
 
-      {/* About Section */}
-      <section id="about" className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative order-2 md:order-1">
-              <div className="aspect-[4/3] bg-stone-200 rounded-2xl overflow-hidden">
-                <img src="/api/placeholder/600/450" alt="Little Manly Point" className="w-full h-full object-cover" />
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mb-6">What is Nelly's Adventures?</h2>
-              <p className="text-lg text-stone-600 mb-4 leading-relaxed">
-                As a qualified early childhood educator and parent who is neurodivergent myself, I offer calm, child-led adventures with gentle structure at Little Manly Point—where different minds are celebrated and curious kids can be authentically themselves in nature.
-              </p>
-              <p className="text-lg text-stone-600 mb-6 leading-relaxed">
-                Each session is filled with nature play, learning, and connection in a small group setting that honours each child's unique way of experiencing the world.
-              </p>
-              
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <MapPin className="text-emerald-600 mr-3 mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <h3 className="font-semibold text-stone-800">Location</h3>
-                    <p className="text-stone-600">Little Manly Point, Manly NSW</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Clock className="text-emerald-600 mr-3 mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <h3 className="font-semibold text-stone-800">Session Times</h3>
-                    <p className="text-stone-600">9:30am - 12:00pm</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Users className="text-emerald-600 mr-3 mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <h3 className="font-semibold text-stone-800">Group Size</h3>
-                    <p className="text-stone-600">Maximum 5 children, minimum 3</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #047857;
+    }
 
-      {/* What We Offer Section */}
-      <section id="what-we-offer" className="py-16 bg-stone-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mb-4 text-center">What Makes Us Different</h2>
-          <p className="text-lg text-stone-600 mb-12 text-center max-w-3xl mx-auto">
-            This program is designed for independent explorers who can follow basic safety boundaries and are ready to discover nature at their own pace.
-          </p>
+    .nav-links-desktop {
+      display: none;
+      gap: 2rem;
+    }
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Heart className="text-emerald-600" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold text-stone-800 mb-3">Neurodivergent-Friendly</h3>
-              <p className="text-stone-600">
-                Flexible participation, sensory-friendly approach, no forced eye contact, stimming welcomed, and understanding of different communication styles.
-              </p>
-            </div>
+    .nav-links-desktop a {
+      color: #44403c;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
 
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Users className="text-emerald-600" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold text-stone-800 mb-3">Small Groups</h3>
-              <p className="text-stone-600">
-                Maximum 5 children means more individual attention, reduced social demands, and space for each child to feel comfortable.
-              </p>
-            </div>
+    .nav-links-desktop a:hover {
+      color: #047857;
+    }
 
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Clock className="text-emerald-600" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold text-stone-800 mb-3">Gentle Structure</h3>
-              <p className="text-stone-600">
-                Clear visual and verbal schedules, predictable rhythms, child-led exploration within safe boundaries, and breaks when needed.
-              </p>
-            </div>
-          </div>
+    .mobile-menu-btn {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #44403c;
+    }
 
-          <div className="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-stone-800 mb-4">Perfect For:</h3>
-            <ul className="space-y-2 text-stone-700">
-              <li className="flex items-start">
-                <span className="text-emerald-600 mr-2">✓</span>
-                <span>Children aged 5-10 (younger children considered case-by-case if they demonstrate readiness for independent exploration)</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-emerald-600 mr-2">✓</span>
-                <span>Kids who can follow basic safety instructions and stay within boundaries</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-emerald-600 mr-2">✓</span>
-                <span>Independent explorers who enjoy child-led play with gentle adult facilitation</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-emerald-600 mr-2">✓</span>
-                <span>Children who prefer being outdoors and in smaller groups</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-emerald-600 mr-2">✓</span>
-                <span>Families needing occasional or regular care with sibling discounts available</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    .nav-links-mobile {
+      padding-bottom: 1rem;
+    }
 
-      {/* Session Structure */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mb-4 text-center">A Typical Session</h2>
-          <p className="text-lg text-stone-600 mb-12 text-center">
-            Each session follows a gentle rhythm that children can rely on, while allowing flexibility for their interests and energy levels.
-          </p>
+    .nav-links-mobile a {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 0.5rem 0;
+      color: #44403c;
+      text-decoration: none;
+    }
 
-          <div className="space-y-6">
-            <div className="flex items-start">
-              <div className="flex-shrink-0 w-24 text-emerald-600 font-semibold">9:30-9:50</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-stone-800 mb-1">Arrival & Free Play</h4>
-                <p className="text-stone-600">First snack and free play at the playground. Time to settle in and connect.</p>
-              </div>
-            </div>
+    .nav-links-mobile a:hover {
+      color: #047857;
+    }
 
-            <div className="flex items-start">
-              <div className="flex-shrink-0 w-24 text-emerald-600 font-semibold">9:50-10:00</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-stone-800 mb-1">Welcome Circle</h4>
-                <p className="text-stone-600">Same song and ritual each week. We talk about what we notice today—weather, seasons, nature changes.</p>
-              </div>
-            </div>
+    .hidden {
+      display: none !important;
+    }
 
-            <div className="flex items-start">
-              <div className="flex-shrink-0 w-24 text-emerald-600 font-semibold">10:00-10:45</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-stone-800 mb-1">Exploration Time</h4>
-                <p className="text-stone-600">Child-led play with gentle facilitation. Discover, create, imagine.</p>
-              </div>
-            </div>
+    @media (min-width: 768px) {
+      .nav-links-desktop {
+        display: flex;
+      }
+      .mobile-menu-btn {
+        display: none;
+      }
+    }
 
-            <div className="flex items-start">
-              <div className="flex-shrink-0 w-24 text-emerald-600 font-semibold">10:45-11:00</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-stone-800 mb-1">Second Snack</h4>
-                <p className="text-stone-600">A break to refuel and rest.</p>
-              </div>
-            </div>
+    /* Containers */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
 
-            <div className="flex items-start">
-              <div className="flex-shrink-0 w-24 text-emerald-600 font-semibold">11:00-11:50</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-stone-800 mb-1">Continued Exploration</h4>
-                <p className="text-stone-600">More play and discovery. We might explore the grassy areas, bush edges, or occasionally visit the beach and rock pools depending on the group.</p>
-              </div>
-            </div>
+    .container-narrow {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
 
-            <div className="flex items-start">
-              <div className="flex-shrink-0 w-24 text-emerald-600 font-semibold">11:50-12:00</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-stone-800 mb-1">Closing Circle</h4>
-                <p className="text-stone-600">Same song and ritual. Share one thing we loved. Pickup time.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    /* Sections */
+    .section {
+      padding: 4rem 0;
+    }
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-16 bg-stone-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mb-4 text-center">Pricing</h2>
-          <p className="text-lg text-stone-600 mb-12 text-center">
-            Simple, transparent pricing with flexibility for families
-          </p>
+    .section-white {
+      background-color: #fff;
+    }
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm border-2 border-emerald-200">
-              <h3 className="text-2xl font-bold text-stone-800 mb-4">4-Week Trial</h3>
-              <div className="text-4xl font-bold text-emerald-600 mb-2">$240</div>
-              <p className="text-stone-600 mb-6">Perfect for getting started and seeing if the program is a good fit for your child.</p>
-              <ul className="space-y-2 text-stone-700 mb-6">
-                <li className="flex items-start">
-                  <span className="text-emerald-600 mr-2">✓</span>
-                  <span>$60 per session</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-600 mr-2">✓</span>
-                  <span>Can be ended immediately if not a good fit</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-600 mr-2">✓</span>
-                  <span>Unused sessions refunded</span>
-                </li>
-              </ul>
-              <p className="text-sm text-stone-500 italic">Sibling rate: $50 per session</p>
-            </div>
+    .section-gray {
+      background-color: #fafaf9;
+    }
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-stone-800 mb-4">Term Bookings</h3>
-              <div className="space-y-4 mb-6">
-                <div>
-                  <div className="text-3xl font-bold text-emerald-600">$480</div>
-                  <p className="text-stone-600">8-week term</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-emerald-600">$600</div>
-                  <p className="text-stone-600">10-week term</p>
-                </div>
-              </div>
-              <ul className="space-y-2 text-stone-700 mb-6">
-                <li className="flex items-start">
-                  <span className="text-emerald-600 mr-2">✓</span>
-                  <span>Pro-rata available if joining mid-term</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-600 mr-2">✓</span>
-                  <span>4 weeks notice required</span>
-                </li>
-              </ul>
-              <p className="text-sm text-stone-500 italic">Sibling discount available</p>
-            </div>
-          </div>
+    .section-gradient {
+      background: linear-gradient(to bottom, #d6f5e8, #fafaf9);
+    }
 
-          <div className="bg-emerald-50 p-6 rounded-lg text-center">
-            <p className="text-stone-700">
-              <strong>Casual spots</strong> available if space permits (bookings close 1 week prior). <strong>$60 per session</strong>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section id="testimonials" className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mb-12 text-center">Parent Testimonials</h2>
-          
-          <div className="space-y-8">
-            <div className="bg-stone-50 p-6 rounded-xl">
-              <p className="text-stone-700 italic mb-4">
-                "Nelly has taken both my children on adventures and they had the best time exploring and learning outdoors! They were so happy and engaged, and I loved seeing how much they enjoyed the experience. They came home excited, happy, and full of stories about what they saw and did. I felt completely at ease knowing they were in such capable hands. Highly recommend Nelly's Adventures!"
-              </p>
-              <p className="text-stone-600 font-medium">— Veronika Z, Manly</p>
-            </div>
-
-            <div className="bg-stone-50 p-6 rounded-xl">
-              <p className="text-stone-700 italic mb-4">
-                "I love that it is all outdoors and in nature, George loved it!"
-              </p>
-              <p className="text-stone-600 font-medium">— James G, Manly</p>
-            </div>
-
-            <div className="bg-stone-50 p-6 rounded-xl">
-              <p className="text-stone-700 italic mb-4">
-                "My daughter loved exploring Manly and the outdoors with Nelly. She always comes back home sharing how much she learned and enjoyed her day with Nelly."
-              </p>
-              <p className="text-stone-600 font-medium">— Juliana P, Manly</p>
-            </div>
-
-            <div className="bg-stone-50 p-6 rounded-xl">
-              <p className="text-stone-700 italic mb-4">
-                "The kids loved being outside, the craft activities and being near the beach. We had a great experience!"
-              </p>
-              <p className="text-stone-600 font-medium">— Lauren J, Manly</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-16 bg-gradient-to-b from-emerald-50 to-stone-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mb-4">Let's Make Some Outdoor Magic Together ✨</h2>
-          <p className="text-lg text-stone-600 mb-8 max-w-2xl mx-auto">
-            Whether you're looking for regular care or just a morning for your child to explore and connect with nature — Nelly's Adventures is here to help.
-          </p>
-          <p className="text-lg text-stone-600 mb-8">
-            Reach out anytime with questions, or book a spot below. I'd love to meet you and your child!
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:contact@nelly.care?subject=Enquiry about Nelly's Adventures" className="inline-flex items-center justify-center px-8 py-3 bg-white text-emerald-700 border-2 border-emerald-600 rounded-lg hover:bg-emerald-50 transition font-medium">
-              <Mail className="mr-2" size={20} />
-              Email Me
-            </a>
-            <a href="https://nellysadventures.setmore.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition font-medium">
-              <Calendar className="mr-2" size={20} />
-              Book Now
-            </a>
-            <a href="https://wa.me/61490865056" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3 bg-white text-emerald-700 border-2 border-emerald-600 rounded-lg hover:bg-emerald-50 transition font-medium">
-              Message on WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-stone-800 text-stone-300 py-8">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="mb-2">Nelly's Adventures - Calm nature exploration for curious minds</p>
-          <p className="text-sm text-stone-400">Little Manly Point, Manly NSW | contact@nelly.care</p>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default NellyAdventures;
+    .section-title {
+      font-size: 2r
