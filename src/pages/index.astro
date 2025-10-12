@@ -3,6 +3,7 @@
 import { Image } from "astro:assets";
 import childrenNature from "../assets/children-in-nature.jpg";
 import nellyBinoculars from "../assets/nelly_binoculars.jpeg";
+import nellysLogo from "../assets/logo.png";
 
 const emailAddress = "contact@nelly.care";
 const emailSubject = "Enquiry about Nelly's Adventures";
@@ -26,7 +27,10 @@ const whatsappLink = "https://wa.me/61490865056";
   <header class="nav" role="banner">
     <div class="nav-container">
       <div class="nav-content" role="navigation" aria-label="Primary">
-        <span class="logo">Nelly's Adventures</span>
+        <div class="logo">
+          <Image src={nellysLogo} alt="Nelly's Adventures logo" class="logo-image" />
+          <span>Nelly's Adventures</span>
+        </div>
 
         <!-- Desktop Navigation -->
         <nav class="nav-links-desktop" aria-hidden="false">
