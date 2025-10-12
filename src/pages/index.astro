@@ -215,48 +215,34 @@ const whatsappLink = "https://wa.me/61490865056";
       </div>
     </section>
 
-    <!-- Pricing Section -->
+<!-- Pricing Section -->
 <section id="pricing" class="section section-gray">
   <div class="container-narrow">
     <h2 class="section-title text-center">Pricing</h2>
     <p class="section-intro">Simple, transparent pricing with flexibility for families</p>
 
-    <div class="pricing-grid">
-      <a href="https://nellysadventures.setmore.com" target="_blank" rel="noopener noreferrer" class="pricing-card pricing-featured">
-        <h3 class="pricing-title">4-Week trial</h3>
-        <div class="pricing-amount">$240</div>
-        <p class="pricing-description">Perfect for getting started and seeing if the program is a good fit for your child.</p>
-        <ul class="pricing-features">
-          <li><span class="check">✓</span> Can be ended immediately if not a good fit</li>
-          <li><span class="check">✓</span> Unused sessions refunded</li>
-        </ul>
-        <p class="pricing-note">Add a sibling for an extra $200.</p>
-        <div class="pricing-btn">Book now →</div>
-      </a>
+    <div class="pricing-simple">
+      <div class="pricing-item">
+        <h3>4-Week Trial</h3>
+        <p class="price">$240</p>
+        <p class="pricing-detail">Perfect for getting started. Can be ended immediately if not a good fit, unused sessions refunded. Add a sibling for $200.</p>
+      </div>
 
-      <a href="https://nellysadventures.setmore.com" target="_blank" rel="noopener noreferrer" class="pricing-card">
-        <h3 class="pricing-title">Term bookings</h3>
-        <div class="pricing-amounts">
-          <div class="pricing-option">
-            <div class="pricing-amount-small">$480</div>
-            <p class="pricing-term">8-week term</p>
-          </div>
-          <div class="pricing-option">
-            <div class="pricing-amount-small">$600</div>
-            <p class="pricing-term">10-week term</p>
-          </div>
-        </div>
-        <ul class="pricing-features">
-          <li><span class="check">✓</span> Pro-rata available if joining mid-term</li>
-          <li><span class="check">✓</span> 4 weeks notice required</li>
-        </ul>
-        <p class="pricing-note">Sibling discount available</p>
-        <div class="pricing-btn">Book now →</div>
-      </a>
+      <div class="pricing-item">
+        <h3>Term Bookings</h3>
+        <p class="price">$480 (8-week) • $600 (10-week)</p>
+        <p class="pricing-detail">Pro-rata available if joining mid-term. 4 weeks notice required. Sibling discount available.</p>
+      </div>
+
+      <div class="pricing-item">
+        <h3>Casual Sessions</h3>
+        <p class="price">$75 per session</p>
+        <p class="pricing-detail">Available if space permits. Bookings close 1 week prior.</p>
+      </div>
     </div>
 
-    <div class="pricing-casual">
-      <p><strong>Casual spots</strong> available if space permits (bookings close 1 week prior). <strong>$75 per session</strong></p>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="https://nellysadventures.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book Now</a>
     </div>
   </div>
 </section>
@@ -583,19 +569,40 @@ const whatsappLink = "https://wa.me/61490865056";
     .highlight-list { list-style: none; display:flex; flex-direction:column; gap:.5rem; }
     .highlight-list li { display:flex; gap:.5rem; align-items:flex-start; color:#44403c; }
     .checkmark { color:#059669; flex-shrink:0; }
+/* Pricing */
+.pricing-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
 
-    /* Scheduling + pricing */
-    .pricing-grid { display: grid; gap: 1.5rem; margin-bottom: 2rem; }
-    .pricing-card { background:#fff; padding:1.5rem; border-radius:.75rem; box-shadow:0 1px 3px rgba(0,0,0,0.06); text-decoration:none; color:inherit; display:block; transition:transform .15s, box-shadow .15s; }
-    .pricing-card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
-    .pricing-featured { border: 2px solid #a7f3d0; }
-    .pricing-title { font-size:1.25rem; font-weight:700; margin-bottom:.5rem; }
-    .pricing-amount { font-size:2rem; font-weight:800; color:#059669; margin-bottom:.5rem; }
-    .pricing-amount-small { font-size:1.25rem; font-weight:700; color:#059669; }
-    .pricing-description { color:#57534e; margin-bottom:1rem; line-height:1.4; }
-    .pricing-features { list-style:none; padding:0; margin-bottom:1rem; }
-    .pricing-features li { display:flex; gap:.5rem; align-items:flex-start; color:#44403c; }
-    .pricing-note { font-size:.9rem; color:#78716c; font-style:italic; margin-bottom:.5rem; }
+.pricing-item {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.pricing-item h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #292524;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-item .price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #059669;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-item .pricing-detail {
+  font-size: 0.95rem;
+  color: #57534e;
+  line-height: 1.5;
+}
 
     @media (min-width: 768px) { .pricing-grid { grid-template-columns: 1fr; } }
 
