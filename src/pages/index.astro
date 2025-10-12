@@ -27,10 +27,10 @@ const whatsappLink = "https://wa.me/61490865056";
   <header class="nav" role="banner">
     <div class="nav-container">
       <div class="nav-content" role="navigation" aria-label="Primary">
-        <div class="logo">
-          <Image src={nellysLogo} alt="Nelly's Adventures logo" class="logo-image" />
-          <span>Nelly's Adventures</span>
-        </div>
+        <a href="#" class="logo">
+         <Image src={nellysLogo} alt="Nelly's Adventures logo" class="logo-image" />
+         <span>Nelly's Adventures</span>
+       </a>
 
         <!-- Desktop Navigation -->
         <nav class="nav-links-desktop" aria-hidden="false">
@@ -435,12 +435,20 @@ const whatsappLink = "https://wa.me/61490865056";
       align-items: center;
       height: 4rem;
     }
-    .logo { font-size: 1.5rem; font-weight: 700; color: #047857; }
+    .logo { 
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem; 
+  font-weight: 700; 
+  color: #047857; 
+  text-decoration: none;
+    }
     .logo-image { 
-      width: 2rem;   /* Even smaller option */
+      width: 2rem;
       height: 2rem; 
       object-fit: contain; 
-      }
+    }
 
     .nav-links-desktop { display: none; gap: 2rem; }
     .nav-links-desktop a { color: #44403c; text-decoration: none; transition: color .2s; }
