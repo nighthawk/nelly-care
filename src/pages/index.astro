@@ -246,8 +246,16 @@ const whatsappLink = "https://wa.me/61490865056";
       </div>
     </div>
 
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="https://nellysadventures.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book now</a>
+    <div class="pricing-buttons">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP7q9ZsF3O-MB-cJR239skEi8uV2Cbe1fwIsYkcmQv6TClWw/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+    Book 3-week trial
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwuT2pUUjD_i64nHs8ngSxxlprdJICHM4rLMH2fjKrKmczEA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+    Book term
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBGEeUiXBWd1LpB0o6MPtC14h0_iQkq3weyoXcTmK2z-3beQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+    Book casual session
+      </a>
     </div>
   </div>
 </section>
@@ -607,6 +615,21 @@ const whatsappLink = "https://wa.me/61490865056";
   font-size: 0.95rem;
   color: #57534e;
   line-height: 1.5;
+}
+
+.pricing-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .pricing-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
     @media (min-width: 768px) { .pricing-grid { grid-template-columns: 1fr; } }
