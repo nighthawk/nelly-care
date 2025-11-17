@@ -1,17 +1,19 @@
----
-// src/pages/index.astro
-import { Image } from "astro:assets";
-import childrenNature from "../assets/children-in-nature.jpg";
-import nellyBinoculars from "../assets/nelly_binoculars.jpeg";
-import nellysLogo from "../assets/logo.png";
+-----
 
-const emailAddress = "contact@nelly.care";
-const emailSubject = "Enquiry about Nelly's Adventures";
+// src/pages/index.astro
+import { Image } from “astro:assets”;
+import childrenNature from “../assets/children-in-nature.jpg”;
+import nellyBinoculars from “../assets/nelly_binoculars.jpeg”;
+import nellysLogo from “../assets/logo.png”;
+
+## const emailAddress = “contact@nelly.care”;
+const emailSubject = “Enquiry about Nelly’s Adventures”;
 const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}`;
-const bookingLink = "#pricing";
-const whatsappLink = "https://wa.me/61490865056";
----
+const bookingLink = “#pricing”;
+const whatsappLink = “https://wa.me/61490865056”;
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -24,6 +26,7 @@ const whatsappLink = "https://wa.me/61490865056";
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Navigation -->
+
   <header class="nav" role="banner">
     <div class="nav-container">
       <div class="nav-content" role="navigation" aria-label="Primary">
@@ -32,41 +35,44 @@ const whatsappLink = "https://wa.me/61490865056";
          <span>Nelly's Adventures</span>
        </a>
 
-        <!-- Desktop Navigation -->
-        <nav class="nav-links-desktop" aria-hidden="false">
-          <a href="#about">About</a>
-          <a href="#what-we-offer">Why Nelly's</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact</a>
-        </nav>
+```
+    <!-- Desktop Navigation -->
+    <nav class="nav-links-desktop" aria-hidden="false">
+      <a href="#about">About</a>
+      <a href="#what-we-offer">Why Nelly's</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-        <!-- Mobile menu button -->
-        <button
-          class="mobile-menu-btn"
-          id="mobile-menu-btn"
-          aria-label="Toggle menu"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-        >
-          <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-            <path d="M3 12h18M3 6h18M3 18h18" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-            <path d="M18 6L6 18M6 6l12 12" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </button>
-      </div>
+    <!-- Mobile menu button -->
+    <button
+      class="mobile-menu-btn"
+      id="mobile-menu-btn"
+      aria-label="Toggle menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+        <path d="M3 12h18M3 6h18M3 18h18" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
 
-      <!-- Mobile Navigation -->
-      <nav class="nav-links-mobile hidden" id="mobile-menu" aria-label="Mobile primary">
-        <a href="#about">About</a>
-        <a href="#what-we-offer">Why Nelly's</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <!-- Mobile Navigation -->
+  <nav class="nav-links-mobile hidden" id="mobile-menu" aria-label="Mobile primary">
+    <a href="#about">About</a>
+    <a href="#what-we-offer">Why Nelly's</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+```
+
   </header>
 
   <main id="main" role="main">
@@ -94,33 +100,34 @@ const whatsappLink = "https://wa.me/61490865056";
             </div>
           </div>
 
-          <div class="hero-image" aria-hidden="false">
-<!--            <Image src={childrenNature} alt="Children playing in nature" />  -->
-          </div>
-        </div>
+```
+      <div class="hero-image" aria-hidden="false">
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="section section-white" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="two-col-grid">
-          <div class="about-image order-2" aria-hidden="false">
-<!--             <Image src={nellyBinoculars} alt="Child with binoculars" /> -->
-          </div>
+<!-- About Section -->
+<section id="about" class="section section-white" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="two-col-grid">
+      <div class="about-image order-2" aria-hidden="false">
+      </div>
 
-          <div class="order-1">
-            <h2 id="about-heading" class="section-title">What is Nelly’s Adventures?</h2>
+      <div class="order-1">
+        <h2 id="about-heading" class="section-title">What is Nelly's Adventures?</h2>
 
-            <p class="text-lg mb-4">
-              <strong>Nelly’s Adventures</strong> offers calm, small-group nature exploration for children aged 5–10 (3 & 4 year olds considered). Each morning blends gentle structure with child-led play, helping children build confidence, connection and curiosity in nature.
-            </p>
+        <p class="text-lg mb-4">
+          <strong>Nelly's Adventures</strong> offers calm, small-group nature exploration for children aged 5–10 (3 & 4 year olds considered). Each morning blends gentle structure with child-led play, helping children build confidence, connection and curiosity in nature.
+        </p>
 
-            <p class="text-lg mb-4">
-              Sessions are guided by Marlen Schoenig — a qualified early childhood educator and neurodivergent parent — who provides a relaxed, inclusive space where different minds are celebrated and every child can feel at ease outdoors.
-            </p>
-            <p class="text-lg mb-6">
-              Sessions focus on nature play, connection and small-group learning that honours each child's unique way of experiencing the world.
+        <p class="text-lg mb-4">
+          Sessions are guided by Marlen Schoenig — a qualified early childhood educator and neurodivergent parent — who provides a relaxed, inclusive space where different minds are celebrated and every child can feel at ease outdoors.
+        </p>
+        <p class="text-lg mb-6">
+          Sessions focus on nature play, connection and small-group learning that honours each child's unique way of experiencing the world.
+```
+
 <br />
             <div class="info-items">
               <div class="info-item">
@@ -134,279 +141,313 @@ const whatsappLink = "https://wa.me/61490865056";
                 </div>
               </div>
 
-              <div class="info-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12 6 12 12 16 14"/>
-                </svg>
-                <div>
-                  <h3>Session times</h3>
-                  <p>Fridays 9:30am – 12:00pm</p>
-                </div>
-              </div>
+```
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <div>
+              <h3>Session times</h3>
+              <p>Fridays 9:30am – 12:00pm</p>
+            </div>
+          </div>
 
-              <div class="info-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
-                <div>
-                  <h3>Costs</h3>
-                  <p>$60 regular • $75 casual • Sibling discounts available</p>
-                </div>
-              </div>
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <div>
+              <h3>Costs</h3>
+              <p>$60 regular • $75 casual • Sibling discounts available</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- What We Offer Section -->
-    <section id="what-we-offer" class="section section-gray" aria-labelledby="offer-heading">
-      <div class="container">
-        <h2 id="offer-heading" class="section-title text-center">Why Nelly's Adventures?</h2>
-        <p class="section-intro">A gentle, joyful alternative — perfect for children who prefer a calmer setting</p>
+<!-- What We Offer Section -->
+<section id="what-we-offer" class="section section-gray" aria-labelledby="offer-heading">
+  <div class="container">
+    <h2 id="offer-heading" class="section-title text-center">Why Nelly's Adventures?</h2>
+    <p class="section-intro">A gentle, joyful alternative — perfect for children who prefer a calmer setting</p>
 
-        <div class="three-col-grid">
-          <div class="card" role="article">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-              </svg>
-            </div>
-            <h3 class="card-title">Neurodivergent-friendly</h3>
-            <p class="card-text">Flexible participation, sensory-friendly approach, no forced eye contact, stimming welcomed, and respect for different communication styles.</p>
-          </div>
-
-          <div class="card" role="article">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
-            <h3 class="card-title">Small groups</h3>
-            <p class="card-text">Max 6 children for more individual attention, reduced social demands and space to feel comfortable.</p>
-          </div>
-
-          <div class="card" role="article">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <h3 class="card-title">Gentle structure</h3>
-            <p class="card-text">Clear visual and verbal schedules, predictable rhythms, child-led exploration within safe boundaries, and regular breaks.</p>
-          </div>
+    <div class="three-col-grid">
+      <div class="card" role="article">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
         </div>
-
-        <div class="highlight-box" aria-hidden="false">
-          <h3 class="highlight-title">Perfect for:</h3>
-          <ul class="highlight-list">
-            <li><span class="checkmark">✓</span><span>Children aged 5–10 years (3 & 4 year olds considered)</span></li>
-            <li><span class="checkmark">✓</span><span>Curious explorers who enjoy child-led play</span></li>
-            <li><span class="checkmark">✓</span><span>Children who prefer the outdoors and smaller groups</span></li>
-            <li><span class="checkmark">✓</span><span>Homeschooling families who need a breather</span></li>
-            <li><span class="checkmark">✓</span><span>Those looking for a screen free alternative</span></li>
-          </ul>
-        </div>
-          <p><i>Please note: Children attending need to be able to follow basic safety instructions (e.g. stay within boundaries).</i></p>
+        <h3 class="card-title">Neurodivergent-friendly</h3>
+        <p class="card-text">Flexible participation, sensory-friendly approach, no forced eye contact, stimming welcomed, and respect for different communication styles.</p>
       </div>
-    </section>
+
+      <div class="card" role="article">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3 class="card-title">Small groups</h3>
+        <p class="card-text">Max 6 children for more individual attention, reduced social demands and space to feel comfortable.</p>
+      </div>
+
+      <div class="card" role="article">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <h3 class="card-title">Gentle structure</h3>
+        <p class="card-text">Clear visual and verbal schedules, predictable rhythms, child-led exploration within safe boundaries, and regular breaks.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box" aria-hidden="false">
+      <h3 class="highlight-title">Perfect for:</h3>
+      <ul class="highlight-list">
+        <li><span class="checkmark">✓</span><span>Children aged 5–10 years (3 & 4 year olds considered)</span></li>
+        <li><span class="checkmark">✓</span><span>Curious explorers who enjoy child-led play</span></li>
+        <li><span class="checkmark">✓</span><span>Children who prefer the outdoors and smaller groups</span></li>
+        <li><span class="checkmark">✓</span><span>Homeschooling families who need a breather</span></li>
+        <li><span class="checkmark">✓</span><span>Those looking for a screen free alternative</span></li>
+      </ul>
+    </div>
+      <p><i>Please note: Children attending need to be able to follow basic safety instructions (e.g. stay within boundaries).</i></p>
+  </div>
+</section>
+```
 
 <!-- Pricing Section -->
+
 <section id="pricing" class="section section-gray">
   <div class="container-narrow">
     <h2 class="section-title text-center">Pricing</h2>
     <p class="section-intro">Simple, transparent pricing with flexibility for families</p>
 
-    <div class="pricing-simple">
-      <div class="pricing-item">
-        <h3>3-Week trial: Start here</h3>
-        <p class="price">$180</p>
-        <p class="pricing-detail">Perfect for getting started. Can be ended with 5 days' notice if not a good fit, unused sessions will be refunded.</p>
-      </div>
+```
+<div class="pricing-simple">
+  <div class="pricing-item">
+    <h3>3-Week trial: Start here</h3>
+    <p class="price">$180</p>
+    <p class="pricing-detail">Perfect for getting started. Can be ended with 5 days' notice if not a good fit, unused sessions will be refunded.</p>
+  </div>
 
-      <div class="pricing-buttons">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP7q9ZsF3O-MB-cJR239skEi8uV2Cbe1fwIsYkcmQv6TClWw/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-    Book 3-week trial
-      </a>
-      </div>
+  <div class="pricing-buttons">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP7q9ZsF3O-MB-cJR239skEi8uV2Cbe1fwIsYkcmQv6TClWw/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+Book 3-week trial
+  </a>
+  </div>
 
-      <div class="pricing-item">
-        <h3>Term booking</h3>
-        <p class="price">$480 (8-week) • $600 (10-week)</p>
-        <p class="pricing-detail">Based on NSW school terms. Pro-rata available if joining mid-term.</p>
-      </div>
+  <div class="pricing-item">
+    <h3>Term booking</h3>
+    <p class="price">$480 (8-week) • $600 (10-week)</p>
+    <p class="pricing-detail">Based on NSW school terms. Pro-rata available if joining mid-term.</p>
+  </div>
 
-      <div class="pricing-buttons">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwuT2pUUjD_i64nHs8ngSxxlprdJICHM4rLMH2fjKrKmczEA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-    Book term
-      </a>
-      </div>
+  <div class="pricing-buttons">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwuT2pUUjD_i64nHs8ngSxxlprdJICHM4rLMH2fjKrKmczEA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+Book term
+  </a>
+  </div>
 
-      <div class="pricing-item">
-        <h3>Casual sessions</h3>
-        <p class="price">$75 per session</p>
-        <p class="pricing-detail">Available if space permits. Bookings close 1 week prior.</p>
-      </div>
-    </div>
+  <div class="pricing-item">
+    <h3>Casual sessions</h3>
+    <p class="price">$75 per session</p>
+    <p class="pricing-detail">Available if space permits. Bookings close 1 week prior.</p>
+  </div>
+</div>
 
-    <div class="pricing-buttons">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBGEeUiXBWd1LpB0o6MPtC14h0_iQkq3weyoXcTmK2z-3beQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-    Book casual session
-      </a>
+<div class="pricing-buttons">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBGEeUiXBWd1LpB0o6MPtC14h0_iQkq3weyoXcTmK2z-3beQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+Book casual session
+  </a>
+</div>
+```
+
+  </div>
+</section>
+
+```
+<!-- Photo Gallery -->
+<section class="section section-white" aria-labelledby="gallery-heading">
+  <div class="container">
+    <h2 id="gallery-heading" class="section-title text-center">Adventures in Nature</h2>
+    <div class="photo-gallery">
+      <div class="gallery-item">
+        <Image src={childrenNature} alt="Children exploring and playing in nature" />
+      </div>
+      <div class="gallery-item">
+        <Image src={nellyBinoculars} alt="Child discovering nature with binoculars" />
+      </div>
+      <div class="gallery-item">
+        <Image src={childrenNature} alt="Outdoor nature exploration activities" />
+      </div>
     </div>
   </div>
 </section>
 
-    <!-- Testimonials -->
+<!-- Testimonials -->
+```
+
 <section id="testimonials" class="section section-white" aria-labelledby="testimonials-heading">
   <div class="container-narrow">
     <h2 id="testimonials-heading" class="section-title text-center">Parent Testimonials</h2>
 
-    <div class="testimonial-carousel">
-      <button class="carousel-btn carousel-prev" aria-label="Previous testimonial">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
-      </button>
+```
+<div class="testimonial-carousel">
+  <button class="carousel-btn carousel-prev" aria-label="Previous testimonial">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="15 18 9 12 15 6"/>
+    </svg>
+  </button>
 
-      <div class="testimonials-wrapper">
-        <div class="testimonial active">
-          <p class="testimonial-text">"Nelly has taken both my children on adventures and they had the best time exploring and learning outdoors! They were so happy and engaged... They came home excited, happy, and full of stories about what they saw and did. <br /><br />I felt completely at ease knowing they were in such capable hands. Highly recommend Nelly's Adventures!"</p>
-          <p class="testimonial-author">— Veronika Z, Manly</p>
-        </div>
-
-        <div class="testimonial">
-          <p class="testimonial-text">"I love that it is all outdoors and in nature, George loved it!"</p>
-          <p class="testimonial-author">— James G, Manly</p>
-        </div>
-
-        <div class="testimonial">
-          <p class="testimonial-text">"My daughter loved exploring Manly and the outdoors with Nelly. She always comes back home sharing how much she learned and enjoyed her day with Nelly."</p>
-          <p class="testimonial-author">— Juliana P, Manly</p>
-        </div>
-
-
-        <div class="testimonial">
-          <p class="testimonial-text">"We had the absolute pleasure of having our children cared for by Nelly's Adventure during the school holidays, and I can’t recommend it highly enough. <br /><br />If you're looking for childcare that feels like an extension of your own values and parenting style, Nelly’s Adventure is it. <br /><br />Our kids had the best time, and we felt completely at ease knowing they were in such capable and caring hands."</p>
-          <p class="testimonial-author">— Vesna Z, Manly</p>
-        </div>
-
-
-      <div class="testimonial">
-          <p class="testimonial-text">"Nelly is incredibly thoughtful, dedicated, and creative. <br /><br />I wholeheartedly recommend Nelly’s Adventure to any family seeking an enriching and joyful child care experience. <br /><br />We’re so grateful to have found her!"</p>
-          <p class="testimonial-author">— Leah H, Manly</p>
-        </div>
-      </div>
-
-      <button class="carousel-btn carousel-next" aria-label="Next testimonial">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
-      </button>
+  <div class="testimonials-wrapper">
+    <div class="testimonial active">
+      <p class="testimonial-text">"Nelly has taken both my children on adventures and they had the best time exploring and learning outdoors! They were so happy and engaged... They came home excited, happy, and full of stories about what they saw and did. <br /><br />I felt completely at ease knowing they were in such capable hands. Highly recommend Nelly's Adventures!"</p>
+      <p class="testimonial-author">— Veronika Z, Manly</p>
     </div>
 
-    <div class="carousel-dots"></div>
+    <div class="testimonial">
+      <p class="testimonial-text">"I love that it is all outdoors and in nature, George loved it!"</p>
+      <p class="testimonial-author">— James G, Manly</p>
+    </div>
+
+    <div class="testimonial">
+      <p class="testimonial-text">"My daughter loved exploring Manly and the outdoors with Nelly. She always comes back home sharing how much she learned and enjoyed her day with Nelly."</p>
+      <p class="testimonial-author">— Juliana P, Manly</p>
+    </div>
+
+
+    <div class="testimonial">
+      <p class="testimonial-text">"We had the absolute pleasure of having our children cared for by Nelly's Adventure during the school holidays, and I can't recommend it highly enough. <br /><br />If you're looking for childcare that feels like an extension of your own values and parenting style, Nelly's Adventure is it. <br /><br />Our kids had the best time, and we felt completely at ease knowing they were in such capable and caring hands."</p>
+      <p class="testimonial-author">— Vesna Z, Manly</p>
+    </div>
+
+
+  <div class="testimonial">
+      <p class="testimonial-text">"Nelly is incredibly thoughtful, dedicated, and creative. <br /><br />I wholeheartedly recommend Nelly's Adventure to any family seeking an enriching and joyful child care experience. <br /><br />We're so grateful to have found her!"</p>
+      <p class="testimonial-author">— Leah H, Manly</p>
+    </div>
+  </div>
+
+  <button class="carousel-btn carousel-next" aria-label="Next testimonial">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="9 18 15 12 9 6"/>
+    </svg>
+  </button>
+</div>
+
+<div class="carousel-dots"></div>
+```
+
   </div>
 </section>
 
-    <!-- FAQ Section -->
-    <section class="section section-gray" aria-labelledby="faq-heading">
-      <div class="container-narrow">
-        <h2 id="faq-heading" class="section-title text-center">Frequently Asked Questions</h2>
+```
+<!-- FAQ Section -->
+<section class="section section-gray" aria-labelledby="faq-heading">
+  <div class="container-narrow">
+    <h2 id="faq-heading" class="section-title text-center">Frequently Asked Questions</h2>
 
-        <div class="faq-container" role="list">
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq1" id="faq1-btn">
-              <span>What should my child bring?</span>
-              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polyline points="6 9 12 15 18 9"/>
-              </svg>
-            </button>
-            <div id="faq1" class="faq-answer" role="region" aria-labelledby="faq1-btn">
-              <p>Your child should be wearing a sun-safe hat and weather-appropriate clothing, and bring a small backpack containing a water bottle, two snacks and sunscreen (already applied). Comfort items and a favourite toy/book are welcome!</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-btn">
-              <span>What happens if it rains?</span>
-              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polyline points="6 9 12 15 18 9"/>
-              </svg>
-            </button>
-            <div id="faq2" class="faq-answer" role="region" aria-labelledby="faq2-btn">
-              <p>We embrace all weather! Light rain means puddle jumping and exploring how nature changes in wet weather. In heavy rain or unsafe conditions, sessions will need to be cancelled, and you will receive a credit towards future sessions.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-btn">
-              <span>Where is drop-off and pick-up?</span>
-              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polyline points="6 9 12 15 18 9"/>
-              </svg>
-            </button>
-            <div id="faq3" class="faq-answer" role="region" aria-labelledby="faq3-btn">
-              <p>Drop-off/pick-up in Manly, details confirmed when you book.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq4" id="faq4-btn">
-              <span>What if my child has allergies or dietary requirements?</span>
-              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polyline points="6 9 12 15 18 9"/>
-              </svg>
-            </button>
-            <div id="faq4" class="faq-answer" role="region" aria-labelledby="faq4-btn">
-              <p>Parents provide all snacks, so you control what your child eats. Nelly's Adventures maintains an allergy-aware environment.</p>
-            </div>
-          </div>
+    <div class="faq-container" role="list">
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq1" id="faq1-btn">
+          <span>What should my child bring?</span>
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div id="faq1" class="faq-answer" role="region" aria-labelledby="faq1-btn">
+          <p>Your child should be wearing a sun-safe hat and weather-appropriate clothing, and bring a small backpack containing a water bottle, two snacks and sunscreen (already applied). Comfort items and a favourite toy/book are welcome!</p>
         </div>
       </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section-gradient" aria-labelledby="contact-heading">
-      <div class="container-narrow text-center">
-        <h2 id="contact-heading" class="section-title">Let's make some outdoor magic together ✨</h2>
-        <p class="text-lg mb-4">Whether you need regular care or a single morning for your child to explore, Nelly's Adventures is here to help.</p>
-        <p class="text-lg mb-8">Reach out anytime with questions or book a spot below — I'd love to meet you and your child.</p>
-
-        <div class="contact-cta" role="group" aria-label="Contact options">
-          <a href={emailLink} class="btn btn-secondary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            Email Nelly
-          </a>
-          <a href={bookingLink} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-              <line x1="16" y1="2" x2="16" y2="6"/>
-              <line x1="8" y1="2" x2="8" y2="6"/>
-              <line x1="3" y1="10" x2="21" y2="10"/>
-            </svg>
-            Book now
-          </a>
-          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            Message on WhatsApp
-          </a>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-btn">
+          <span>What happens if it rains?</span>
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div id="faq2" class="faq-answer" role="region" aria-labelledby="faq2-btn">
+          <p>We embrace all weather! Light rain means puddle jumping and exploring how nature changes in wet weather. In heavy rain or unsafe conditions, sessions will need to be cancelled, and you will receive a credit towards future sessions.</p>
         </div>
       </div>
-    </section>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-btn">
+          <span>Where is drop-off and pick-up?</span>
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div id="faq3" class="faq-answer" role="region" aria-labelledby="faq3-btn">
+          <p>Drop-off/pick-up in Manly, details confirmed when you book.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq4" id="faq4-btn">
+          <span>What if my child has allergies or dietary requirements?</span>
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div id="faq4" class="faq-answer" role="region" aria-labelledby="faq4-btn">
+          <p>Parents provide all snacks, so you control what your child eats. Nelly's Adventures maintains an allergy-aware environment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section section-gradient" aria-labelledby="contact-heading">
+  <div class="container-narrow text-center">
+    <h2 id="contact-heading" class="section-title">Let's make some outdoor magic together ✨</h2>
+    <p class="text-lg mb-4">Whether you need regular care or a single morning for your child to explore, Nelly's Adventures is here to help.</p>
+    <p class="text-lg mb-8">Reach out anytime with questions or book a spot below — I'd love to meet you and your child.</p>
+
+    <div class="contact-cta" role="group" aria-label="Contact options">
+      <a href={emailLink} class="btn btn-secondary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        Email Nelly
+      </a>
+      <a href={bookingLink} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        Book now
+      </a>
+      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+```
+
   </main>
 
   <!-- Footer -->
+
   <footer class="footer" role="contentinfo">
     <div class="container text-center">
       <p class="footer-title">Nelly's Adventures — Calm nature exploration for curious minds</p>
@@ -523,364 +564,4 @@ const whatsappLink = "https://wa.me/61490865056";
     .hero { padding-top: 6rem; padding-bottom: 4rem; background: linear-gradient(to bottom, #d6f5e8, #fafaf9); }
     .hero-grid { display: grid; gap: 2.5rem; align-items: center; }
     .hero-title { font-size: 2.5rem; font-weight: 800; color: #292524; margin-bottom: 1rem; line-height: 1.15; }
-    .hero-subtitle { font-size: 1.25rem; color: #57534e; margin-bottom: 1.5rem; line-height: 1.6; }
-    .hero-cta { display: flex; flex-direction: column; gap: 0.75rem; }
-    .hero-image { position: relative; }
-
-    .hero-image img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 1rem; background-color: #a7f3d0; }
-
-    @media (min-width: 768px) {
-      .hero-grid { grid-template-columns: 1fr; }
-      .hero-cta { flex-direction: row; }
-      .hero-title { font-size: 3rem; }
-      .section-title { font-size: 2.5rem; }
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.625rem 1.25rem;
-      border-radius: 0.5rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.15s;
-      cursor: pointer;
-      border: none;
-      font-size: 1rem;
-    }
-    .btn-primary { background-color: #059669; color: #fff; }
-    .btn-primary:hover { background-color: #047857; }
-    .btn-secondary { background-color: #fff; color: #047857; border: 2px solid #059669; }
-    .btn-secondary:hover { background-color: #d6f5e8; }
-
-    /* Grids */
-    .two-col-grid { display: grid; gap: 2.5rem; align-items: center; }
-    .three-col-grid { display: grid; gap: 2rem; margin-bottom: 2.5rem; }
-    .about-image img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 1rem; background-color: #d6d3d1; }
-
-    @media (min-width: 768px) {
-      .two-col-grid { grid-template-columns: 1fr; }
-      .three-col-grid { grid-template-columns: repeat(3, 1fr); }
-      .order-1 { order: 1; }
-      .order-2 { order: 2; }
-    }
-
-    /* Info items */
-    .info-items { display: flex; flex-direction: column; gap: 1rem; }
-    .info-item { display: flex; align-items: flex-start; gap: 0.75rem; }
-    .info-item svg { color: #059669; flex-shrink: 0; margin-top: 0.25rem; }
-    .info-item h3 { font-weight: 600; color: #292524; margin-bottom: 0.25rem; }
-    .info-item p { color: #57534e; }
-
-    /* Cards */
-    .card { background: #fff; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-    .card-icon { width: 3rem; height: 3rem; background: #d6f5e8; border-radius: 0.5rem; display:flex; align-items:center; justify-content:center; margin-bottom:1rem; }
-    .card-title { font-size: 1.125rem; font-weight: 700; color: #292524; margin-bottom: 0.5rem; }
-    .card-text { color: #57534e; }
-
-    /* Highlight box */
-    .highlight-box { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem; border-radius: 0.5rem; margin-top: 1.5rem; }
-    .highlight-title { font-size: 1.125rem; font-weight: 700; color: #292524; margin-bottom: .75rem; }
-    .highlight-list { list-style: none; display:flex; flex-direction:column; gap:.5rem; }
-    .highlight-list li { display:flex; gap:.5rem; align-items:flex-start; color:#44403c; }
-    .checkmark { color:#059669; flex-shrink:0; }
-/* Pricing */
-.pricing-simple {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.pricing-item {
-  background: #fff;
-  padding: 1.25rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-}
-
-.pricing-item h3 {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #292524;
-  margin-bottom: 0.5rem;
-}
-
-.pricing-item .price {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #059669;
-  margin-bottom: 0.5rem;
-}
-
-.pricing-item .pricing-detail {
-  font-size: 0.95rem;
-  color: #57534e;
-  line-height: 1.5;
-}
-
-.pricing-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 2rem;
-  align-items: center;
-}
-
-@media (min-width: 640px) {
-  .pricing-buttons {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-    @media (min-width: 768px) { .pricing-grid { grid-template-columns: 1fr; } }
-
-/* Testimonials Carousel */
-.testimonial-carousel {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.testimonials-wrapper {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.testimonial {
-  display: none;
-  background: #fafaf9;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  min-height: 200px;
-}
-
-.testimonial.active {
-  display: block;
-  animation: fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.testimonial-text {
-  color: #44403c;
-  font-style: italic;
-  margin-bottom: 1rem;
-  font-size: 1.125rem;
-}
-
-.testimonial-author {
-  color: #57534e;
-  font-weight: 600;
-}
-
-.carousel-btn {
-  background: #fff;
-  border: 2px solid #059669;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  flex-shrink: 0;
-  transition: all 0.2s;
-  color: #059669;
-}
-
-.carousel-btn:hover {
-  background: #d6f5e8;
-}
-
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.carousel-dot {
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  background: #d6d3d1;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.carousel-dot.active {
-  background: #059669;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-    /* FAQ */
-    .faq-container { display:flex; flex-direction:column; gap:1rem; }
-    .faq-item { background:#fff; border-radius:.75rem; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
-    .faq-question {
-      width:100%; display:flex; justify-content:space-between; align-items:center; padding:1rem 1.25rem; background:none; border:none; text-align:left; font-size:1.05rem; font-weight:700; color:#292524; cursor:pointer;
-    }
-    .faq-question:hover { background:#fafaf9; }
-    .faq-icon { flex-shrink:0; transition: transform .25s; color:#059669; }
-    .faq-item.active .faq-icon { transform: rotate(180deg); }
-    .faq-answer { max-height:0; overflow:hidden; transition: max-height .28s ease-out; }
-    .faq-item.active .faq-answer { max-height: 400px; }
-    .faq-answer p { padding: 0 1.25rem 1rem 1.25rem; color:#57534e; line-height:1.5; }
-
-    /* Contact */
-    .contact-cta { display:flex; flex-direction:column; gap:1rem; justify-content:center; align-items:center; }
-    @media (min-width:640px) { .contact-cta { flex-direction:row; } }
-
-    /* Footer */
-    .footer { background:#292524; color:#d6d3d1; padding:2rem 0; }
-    .footer-title { margin-bottom:.5rem; }
-    .footer-text { font-size:.875rem; color:#a8a29e; }
-  </style>
-
-  <script>
-    // Mobile menu + accessibility + FAQ JS
-    (function () {
-      /* Mobile menu toggle */
-      const btn = document.getElementById('mobile-menu-btn');
-      const menu = document.getElementById('mobile-menu');
-      const menuIcon = btn?.querySelector('.menu-icon');
-      const closeIcon = btn?.querySelector('.close-icon');
-
-      function openMenu() {
-        menu.classList.remove('hidden');
-        menuIcon?.classList.add('hidden');
-        closeIcon?.classList.remove('hidden');
-        btn.setAttribute('aria-expanded', 'true');
-      }
-      function closeMenu() {
-        menu.classList.add('hidden');
-        menuIcon?.classList.remove('hidden');
-        closeIcon?.classList.add('hidden');
-        btn.setAttribute('aria-expanded', 'false');
-      }
-
-      btn?.addEventListener('click', () => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        if (expanded) closeMenu(); else openMenu();
-      });
-
-      // Close mobile menu when clicking a link (mobile)
-      document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => closeMenu());
-      });
-
-      // Close on Escape
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          // close mobile menu if open
-          if (btn && btn.getAttribute('aria-expanded') === 'true') closeMenu();
-
-          // close open FAQ
-          document.querySelectorAll('.faq-item.active').forEach(item => item.classList.remove('active'));
-          document.querySelectorAll('.faq-question[aria-expanded="true"]').forEach(b => b.setAttribute('aria-expanded', 'false'));
-        }
-      });
-
-      /* FAQ accordion toggle with aria attributes and keyboard support */
-      const faqButtons = Array.from(document.querySelectorAll('.faq-question'));
-      faqButtons.forEach(button => {
-        // ensure button is focusable and has correct attributes
-        button.addEventListener('click', () => {
-          const parent = button.parentElement;
-          const isActive = parent.classList.contains('active');
-
-          // Close all
-          document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
-          document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
-
-          // Open if it was closed
-          if (!isActive) {
-            parent.classList.add('active');
-            button.setAttribute('aria-expanded', 'true');
-
-            // move focus into the answer region for screen reader users
-            const answerId = button.getAttribute('aria-controls');
-            const answer = document.getElementById(answerId);
-            if (answer) {
-              // optionally focus the answer container (not required)
-              // answer.focus(); // commented out to avoid unexpected focus jumps
-            }
-          } else {
-            // it was active — now closed
-            button.setAttribute('aria-expanded', 'false');
-          }
-        });
-
-        // keyboard support: Enter and Space already work for <button>
-      });
-    })();
-
-// Testimonial Carousel
-(function() {
-  const testimonials = document.querySelectorAll('.testimonial');
-  const prevBtn = document.querySelector('.carousel-prev');
-  const nextBtn = document.querySelector('.carousel-next');
-  const dotsContainer = document.querySelector('.carousel-dots');
-  let currentIndex = 0;
-
-  // Create dots
-  testimonials.forEach((_, index) => {
-    const dot = document.createElement('button');
-    dot.classList.add('carousel-dot');
-    dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
-    if (index === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goToSlide(index));
-    dotsContainer.appendChild(dot);
-  });
-
-  const dots = document.querySelectorAll('.carousel-dot');
-
-  function goToSlide(index) {
-    testimonials[currentIndex].classList.remove('active');
-    dots[currentIndex].classList.remove('active');
-    currentIndex = index;
-    testimonials[currentIndex].classList.add('active');
-    dots[currentIndex].classList.add('active');
-  }
-
-  function nextSlide() {
-    const next = (currentIndex + 1) % testimonials.length;
-    goToSlide(next);
-  }
-
-  function prevSlide() {
-    const prev = (currentIndex - 1 + testimonials.length) % testimonials.length;
-    goToSlide(prev);
-  }
-
-  prevBtn.addEventListener('click', prevSlide);
-  nextBtn.addEventListener('click', nextSlide);
-
-  // Auto-advance every 10 seconds
-  setInterval(nextSlide, 10000);
-})();
-
-</script>
-</body>
-</html>
+    .hero-subtitle { font-size: 1.25rem; color: #57534e; margin-bottom: 1.5rem; line-height:
