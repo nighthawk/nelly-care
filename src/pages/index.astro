@@ -340,6 +340,7 @@ const emailSubject = "Enquiry about Nelly's Adventures";
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       line-height: 1.6;
+      padding-top: 4rem; /* same as nav height */
       color: #292524;
       background-color: #fafaf9;
     }
@@ -370,6 +371,7 @@ const emailSubject = "Enquiry about Nelly's Adventures";
       background-color: rgba(255,255,255,0.95);
       backdrop-filter: blur(8px);
       position: fixed;
+      height: 4rem;
       width: 100%;
       z-index: 50;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
@@ -440,7 +442,6 @@ const emailSubject = "Enquiry about Nelly's Adventures";
 
 /* Pause notice */
 .pause-notice {
-  margin-top: 6rem; /* clears fixed nav */
   padding: 2.5rem 0;
   background: #fef3c7;
   border-bottom: 1px solid #fde68a;
